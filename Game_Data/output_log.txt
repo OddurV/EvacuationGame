@@ -18,20 +18,14 @@ Platform assembly: \\hsnas6\StudentHome\2016\a16antma\Documents\GitHub\Evacuatio
 Loading \\hsnas6\StudentHome\2016\a16antma\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: \\hsnas6\StudentHome\2016\a16antma\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading \\hsnas6\StudentHome\2016\a16antma\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  1.770 seconds
+- Completed reload, in  1.524 seconds
 Platform assembly: \\hsnas6\StudentHome\2016\a16antma\Documents\GitHub\EvacuationGame\Game_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: \\hsnas6\StudentHome\2016\a16antma\Documents\GitHub\EvacuationGame\Game_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.315291 ms
+UnloadTime: 0.731060 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: d14 -> priority: 1 
-  Thread -> id: da0 -> priority: 1 
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 8.217363 ms
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1483.
-Total: 2.519383 ms (FindLiveObjects: 0.924952 ms CreateObjectMapping: 0.069000 ms MarkObjects: 1.500339 ms  DeleteObjects: 0.023950 ms)
-
+  Thread -> id: 2670 -> priority: 1 
+  Thread -> id: 216c -> priority: 1 
