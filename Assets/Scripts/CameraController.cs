@@ -7,7 +7,7 @@ public class CameraController : MonoBehaviour {
     public GameObject player;
     public Vector3 offset;
 
-	static private float zoomParameterMax = 40.0f;
+	static private float zoomParameterMax = 25.0f;
 	static private float zoomParamYmin = 0.0f;
 	static private float zoomParamYmax = 0.0f;
 	static private float zoomParamZmin = 0.0f;
@@ -47,7 +47,7 @@ public class CameraController : MonoBehaviour {
 			zoomParamZmax = pos.z-origin.z;
 		}
 		float y = Mathf.Max (Mathf.Abs (zoomParamYmax), Mathf.Abs (zoomParamYmin));
-		float z = Mathf.Max (Mathf.Abs (zoomParamZmax), Mathf.Abs (zoomParamZmin));
+		float z = Mathf.Max (Mathf.Abs (zoomParamZmax), Mathf.Abs (zoomParamZmin))/5.0f;
 		float max = Mathf.Max (y, z);
 		//Debug.Log (zoomParamZmax);
 		//Debug.Log ("max = " + max);
