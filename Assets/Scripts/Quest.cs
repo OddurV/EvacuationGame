@@ -8,7 +8,7 @@ public class Quest : MonoBehaviour {
 
     // Use this for initialization
 	void Start () {
-        messageText.text = " ";
+        messageText.text = "Go to quest A";
 	}
 	
     
