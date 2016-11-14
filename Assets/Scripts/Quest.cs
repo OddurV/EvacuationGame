@@ -4,20 +4,13 @@ using System.Collections;
 
 public class Quest : MonoBehaviour {
 
-    public Text messageText;
+	public QuestSystem questSystem;
 
-    // Use this for initialization
-	void Start () {
-        messageText.text = "Go to quest A";
-	}
-	
-    
 	void OnTriggerEnter (Collider other) {
         if (other.tag == "Player")
         {
-			messageText.text = "You finished Quest A";
+			questSystem.QuestCompleted();
 			Destroy(this.gameObject);
         }
 	}
 }
-
