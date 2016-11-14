@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Alarm
+  - Quest
   layers:
   - Default
   - TransparentFX
