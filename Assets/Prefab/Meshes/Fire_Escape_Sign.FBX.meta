@@ -6,10 +6,29 @@ ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Fire_Alarm_Roof
+    100004: Fire_Alarm_Wall
+    100006: Fire_Exit
+    100008: Sofa
     400000: //RootNode
+    400002: Fire_Alarm_Roof
+    400004: Fire_Alarm_Wall
+    400006: Fire_Exit
+    400008: Sofa
     2300000: //RootNode
+    2300002: Fire_Alarm_Roof
+    2300004: Fire_Alarm_Wall
+    2300006: Fire_Exit
+    2300008: Sofa
     3300000: //RootNode
+    3300002: Fire_Alarm_Roof
+    3300004: Fire_Alarm_Wall
+    3300006: Fire_Exit
+    3300008: Sofa
     4300000: Fire_Exit
+    4300002: Fire_Alarm_Wall
+    4300004: Sofa
+    4300006: Fire_Alarm_Roof
     9500000: //RootNode
   materials:
     importMaterials: 1
