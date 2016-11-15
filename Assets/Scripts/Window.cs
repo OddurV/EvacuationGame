@@ -16,9 +16,11 @@ public class Window : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other){
-		Debug.Log ("Closed!!!!!");
-		GetComponent<Collider>().enabled = false;
-		targetValue = AngleY;
-		currentValue = 0;
+		if (other.tag == "Player") {
+			Debug.Log ("Closed!!!!!");
+			GetComponent<Collider> ().enabled = false;
+			targetValue = AngleY;
+			currentValue = 0;
+		}
 	}
 }

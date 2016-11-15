@@ -8,11 +8,13 @@ public class Alarm : MonoBehaviour {
 	private int i;
 
 	void OnTriggerEnter(Collider other){
-		Debug.Log ("Triggered!!!!!");
-		alarmBoxes = GameObject.FindGameObjectsWithTag ("Alarm");
+		if (other.tag == "Player") {
+			Debug.Log ("Triggered!!!!!");
+			alarmBoxes = GameObject.FindGameObjectsWithTag ("Alarm");
 
-		for ( i = 0; i < alarmBoxes.Length; i++ ){
-			alarmBoxes[i].GetComponent<Collider>().enabled = false;
+			for (i = 0; i < alarmBoxes.Length; i++) {
+				alarmBoxes [i].GetComponent<Collider> ().enabled = false;
+			}
 		}
 	}
 }
