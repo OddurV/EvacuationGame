@@ -1,41 +1,41 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &100000
+--- !u!1 &154940
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 400000}
-  - 198: {fileID: 19800000}
-  - 199: {fileID: 19900000}
+  - 4: {fileID: 450990}
+  - 198: {fileID: 19869012}
+  - 199: {fileID: 19929412}
   m_Layer: 0
-  m_Name: fx_fire_cartoon_a
+  m_Name: fire_cartoon_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &400000
+--- !u!4 &450990
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
+  m_GameObject: {fileID: 154940}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.291143, y: 1.2741073, z: 0}
+  m_LocalPosition: {x: -0.69, y: 1.53, z: -9.98}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!198 &19800000
+--- !u!198 &19869012
 ParticleSystem:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
+  m_GameObject: {fileID: 154940}
   serializedVersion: 2
   lengthInSec: 0.1
   startDelay:
@@ -559,7 +559,7 @@ ParticleSystem:
       minMaxState: 3
     separateAxes: 0
   ColorModule:
-    enabled: 1
+    enabled: 0
     gradient:
       maxGradient:
         key0:
@@ -686,8 +686,8 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
       minMaxState: 1
-    tilesX: 5
-    tilesY: 5
+    tilesX: 4
+    tilesY: 3
     animationType: 0
     rowIndex: 0
     cycles: 1
@@ -1474,17 +1474,17 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &19900000
+--- !u!199 &19929412
 ParticleSystemRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
+  m_GameObject: {fileID: 154940}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_Materials:
-  - {fileID: 2100000, guid: 24389f3be11ad4b4b8a8e86c1348f326, type: 2}
+  - {fileID: 2100000, guid: 5c76afed25e9def46933b9d0be08e767, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1524,5 +1524,5 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 100000}
+  m_RootGameObject: {fileID: 154940}
   m_IsPrefabParent: 1
