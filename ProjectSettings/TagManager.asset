@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Alarm
   - Quest
+  - ExitDoor
   layers:
   - Default
   - TransparentFX
