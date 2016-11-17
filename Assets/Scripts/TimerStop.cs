@@ -9,9 +9,10 @@ public class TimerStop : MonoBehaviour {
 
 	private void OnTriggerEnter(Collider other)
 	{
-		theNewScript.Finnish();
-		//GameObject.Find("EthanBody").SendMessage("Finnish");
-
+		if (other.tag == "Player"){
+			theNewScript.Finnish();
+			//GameObject.Find("EthanBody").SendMessage("Finnish");
+		}
 	}
 
 }

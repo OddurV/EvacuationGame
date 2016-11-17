@@ -12,7 +12,7 @@ public class QuestSystem : MonoBehaviour {
 		quests = GameObject.FindGameObjectsWithTag ("Quest");
 		// Deactivate all quests
 		for (int i = 0; i < quests.Length; i++) {
-			Debug.Log ("Quest Number " + i + " is named" + quests [i].name);
+			//Debug.Log ("Quest Number " + i + " is named" + quests [i].name);
 			quests [i].SetActive (false);
 		}
 		// Activate the first quest
