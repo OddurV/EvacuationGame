@@ -7,6 +7,7 @@ TagManager:
   - Alarm
   - Quest
   - ExitDoor
+  - AIrunning
   layers:
   - Default
   - TransparentFX
