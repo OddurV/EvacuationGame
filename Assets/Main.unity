@@ -15001,6 +15001,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1288118189}
   - 114: {fileID: 1288118190}
+  - 65: {fileID: 1288118191}
   m_Layer: 0
   m_Name: ElevatorManager
   m_TagString: Untagged
@@ -15053,6 +15054,18 @@ MonoBehaviour:
   door3: {fileID: 1552489399}
   door4: {fileID: 1799396162}
   door5: {fileID: 1544525130}
+--- !u!65 &1288118191
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1288118188}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 23, z: 2}
+  m_Center: {x: -4, y: 16.5, z: 23}
 --- !u!1001 &1288588801
 Prefab:
   m_ObjectHideFlags: 0

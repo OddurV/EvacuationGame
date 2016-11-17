@@ -56,6 +56,31 @@ public class ElevatorController : MonoBehaviour {
 		}
 	}
 
+	void OnTriggerStay (Collider other){
+		if (other.tag == "Player") {
+			if(Input.GetKeyUp(KeyCode.Keypad1) || Input.GetKeyUp(KeyCode.Alpha1)){
+				Debug.Log ("Key 1 pressed");
+				Summon (1);
+			}
+			if(Input.GetKeyUp(KeyCode.Keypad2) || Input.GetKeyUp(KeyCode.Alpha2)){
+				Debug.Log ("Key 2 pressed");
+				Summon (2);
+			}
+			if(Input.GetKeyUp(KeyCode.Keypad3) || Input.GetKeyUp(KeyCode.Alpha3)){
+				Debug.Log ("Key 3 pressed");
+				Summon (3);
+			}
+			if(Input.GetKeyUp(KeyCode.Keypad4) || Input.GetKeyUp(KeyCode.Alpha4)){
+				Debug.Log ("Key 4 pressed");
+				Summon (4);
+			}
+			if(Input.GetKeyUp(KeyCode.Keypad5) || Input.GetKeyUp(KeyCode.Alpha5)){
+				Debug.Log ("Key 5 pressed");
+				Summon (5);
+			}
+		}
+	}
+
 	void CloseAll(){
 		door1.GetComponent<ElevatorDoor>().CloseDoor ();
 		door2.GetComponent<ElevatorDoor>().CloseDoor ();
@@ -63,21 +88,6 @@ public class ElevatorController : MonoBehaviour {
 		door4.GetComponent<ElevatorDoor>().CloseDoor ();
 		door5.GetComponent<ElevatorDoor>().CloseDoor ();
 	}
-	/*void ChangeTarget(){
-		if(currentState == "Moving To Position 1"){
-			currentState = "Moving To Position 2";
-			newPosition = position2.position;
-		}
-		else if(currentState == "Moving To Position 2"){
-			currentState = "Moving To Position 1";
-			newPosition = position1.position;
-		}
-		else if(currentState == ""){
-			currentState = "Moving To Position 2";
-			newPosition = position2.position;
-		}
-		Invoke ("ChangeTarget", resetTime);
-	}*/
 
 	public void Summon(int floor){
 		switch (floor) {
