@@ -11,7 +11,7 @@ GameObject:
   - 33: {fileID: 3372538}
   - 65: {fileID: 6564370}
   - 23: {fileID: 2311434}
-  - 114: {fileID: 11415814}
+  - 114: {fileID: 11448338}
   m_Layer: 10
   m_Name: Quest
   m_TagString: Untagged
@@ -25,10 +25,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 147404}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.7, y: 12.98, z: -2.024}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071067}
+  m_LocalPosition: {x: -1.45, y: 15.786, z: 6.03}
   m_LocalScale: {x: 0.6, y: 0.5, z: 0.05}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -42,7 +42,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 69baa9008603e8446b1f454ea8bb4914, type: 2}
+  - {fileID: 0}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -77,7 +77,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.6, y: 0.5, z: 0.05}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &11415814
+--- !u!114 &11448338
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 147404}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cdc84fc20878e948bcd253f9d4a3fe2, type: 3}
+  m_Script: {fileID: 11500000, guid: 17030bf0e15216d4883b68833b7befb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   messageText: {fileID: 0}
