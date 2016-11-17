@@ -7587,8 +7587,8 @@ GameObject:
   - 4: {fileID: 612441899}
   - 33: {fileID: 612441903}
   - 65: {fileID: 612441902}
+  - 65: {fileID: 612441900}
   - 23: {fileID: 612441901}
-  - 135: {fileID: 612441900}
   - 114: {fileID: 612441904}
   m_Layer: 0
   m_Name: Elevator_Wall_Door
@@ -7610,19 +7610,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 205621929}
   m_RootOrder: 0
---- !u!135 &612441900
-SphereCollider:
+--- !u!65 &612441900
+BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 13508730, guid: 00c26d786ff6a414481abee94c44f204,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 612441898}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0.00000023841858, z: 0}
+  m_Size: {x: 15, y: 1, z: 2}
+  m_Center: {x: 9, y: 0, z: 0}
 --- !u!23 &612441901
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14473,8 +14472,8 @@ GameObject:
   - 4: {fileID: 1218403925}
   - 33: {fileID: 1218403924}
   - 65: {fileID: 1218403923}
+  - 65: {fileID: 1218403921}
   - 23: {fileID: 1218403922}
-  - 135: {fileID: 1218403921}
   - 114: {fileID: 1218403920}
   m_Layer: 0
   m_Name: Elevator_Wall_Door
@@ -14501,19 +14500,18 @@ MonoBehaviour:
   newPosition: {x: 0, y: 0, z: 0}
   smooth: 1
   floor: 2
---- !u!135 &1218403921
-SphereCollider:
+--- !u!65 &1218403921
+BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 13508730, guid: 00c26d786ff6a414481abee94c44f204,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1218403919}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0.00000023841858, z: 0}
+  m_Size: {x: 15, y: 1, z: 2}
+  m_Center: {x: 9, y: 0, z: 0}
 --- !u!23 &1218403922
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17536,8 +17534,8 @@ GameObject:
   - 4: {fileID: 1544525131}
   - 33: {fileID: 1544525136}
   - 65: {fileID: 1544525135}
+  - 65: {fileID: 1544525133}
   - 23: {fileID: 1544525134}
-  - 135: {fileID: 1544525133}
   - 114: {fileID: 1544525132}
   m_Layer: 0
   m_Name: Elevator_Wall_Door
@@ -17577,19 +17575,18 @@ MonoBehaviour:
   newPosition: {x: 0, y: 0, z: 0}
   smooth: 1
   floor: 5
---- !u!135 &1544525133
-SphereCollider:
+--- !u!65 &1544525133
+BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 13508730, guid: 00c26d786ff6a414481abee94c44f204,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1544525130}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0.00000023841858, z: 0}
+  m_Size: {x: 15, y: 1, z: 2}
+  m_Center: {x: 9, y: 0, z: 0}
 --- !u!23 &1544525134
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17835,8 +17832,8 @@ GameObject:
   - 4: {fileID: 1552489405}
   - 33: {fileID: 1552489404}
   - 65: {fileID: 1552489403}
+  - 65: {fileID: 1552489401}
   - 23: {fileID: 1552489402}
-  - 135: {fileID: 1552489401}
   - 114: {fileID: 1552489400}
   m_Layer: 0
   m_Name: Elevator_Wall_Door
@@ -17863,19 +17860,18 @@ MonoBehaviour:
   newPosition: {x: 0, y: 0, z: 0}
   smooth: 1
   floor: 3
---- !u!135 &1552489401
-SphereCollider:
+--- !u!65 &1552489401
+BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 13508730, guid: 00c26d786ff6a414481abee94c44f204,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1552489399}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0.00000023841858, z: 0}
+  m_Size: {x: 15, y: 1, z: 2}
+  m_Center: {x: 9, y: 0, z: 0}
 --- !u!23 &1552489402
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20592,8 +20588,8 @@ GameObject:
   - 4: {fileID: 1799396168}
   - 33: {fileID: 1799396167}
   - 65: {fileID: 1799396166}
+  - 65: {fileID: 1799396164}
   - 23: {fileID: 1799396165}
-  - 135: {fileID: 1799396164}
   - 114: {fileID: 1799396163}
   m_Layer: 0
   m_Name: Elevator_Wall_Door
@@ -20620,19 +20616,18 @@ MonoBehaviour:
   newPosition: {x: 0, y: 0, z: 0}
   smooth: 1
   floor: 4
---- !u!135 &1799396164
-SphereCollider:
+--- !u!65 &1799396164
+BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 13508730, guid: 00c26d786ff6a414481abee94c44f204,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1799396162}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0.00000023841858, z: 0}
+  m_Size: {x: 15, y: 1, z: 2}
+  m_Center: {x: 9, y: 0, z: 0}
 --- !u!23 &1799396165
 MeshRenderer:
   m_ObjectHideFlags: 0
