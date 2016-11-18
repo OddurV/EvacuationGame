@@ -5147,7 +5147,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 19597056, guid: 54eb5844754051b40a918a84c33b7c1a, type: 2}
       propertyPath: m_StoppingDistance
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -5488,7 +5488,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 19597056, guid: 54eb5844754051b40a918a84c33b7c1a, type: 2}
       propertyPath: m_StoppingDistance
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54eb5844754051b40a918a84c33b7c1a, type: 2}
@@ -8292,7 +8292,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 19597056, guid: 54eb5844754051b40a918a84c33b7c1a, type: 2}
       propertyPath: m_StoppingDistance
-      value: 1
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -16807,7 +16807,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 19597056, guid: 54eb5844754051b40a918a84c33b7c1a, type: 2}
       propertyPath: m_StoppingDistance
-      value: 1
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
