@@ -18,58 +18,42 @@ Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\Evacuatio
 Loading \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  1.664 seconds
-Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\System.dll (this message is harmless)
-desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
-<RI> Initializing input.
-<RI> Input initialized.
-Initialize engine version: 5.3.5f1 (960ebf59018a)
-GfxDevice: creating device client; threaded=1
-Direct3D:
-    Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA Quadro K2000  (ID=0xffe)
-    Vendor:   NVIDIA
-    VRAM:     1990 MB
-Begin MonoManager ReloadAssembly
-Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
-Loading \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  1.690 seconds
+- Completed reload, in  1.602 seconds
 Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.557987 ms
+UnloadTime: 0.571958 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 1db4 -> priority: 1 
-  Thread -> id: 1db8 -> priority: 1 
+  Thread -> id: 1820 -> priority: 1 
+  Thread -> id: 76c -> priority: 1 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 3.885669 ms
+UnloadTime: 4.133442 ms
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2771.
-Total: 0.430822 ms (FindLiveObjects: 0.114334 ms CreateObjectMapping: 0.041628 ms MarkObjects: 0.259462 ms  DeleteObjects: 0.014256 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2837.
+Total: 1.112268 ms (FindLiveObjects: 0.229524 ms CreateObjectMapping: 0.113764 ms MarkObjects: 0.731057 ms  DeleteObjects: 0.036780 ms)
+
+Closed!!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Key 5 pressed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Closed!!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Closed!!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 4.673467 ms
+UnloadTime: 5.655149 ms
 
 Unloading 60 unused Assets to reduce memory usage. Loaded Objects now: 331.
-Total: 0.948322 ms (FindLiveObjects: 0.032504 ms CreateObjectMapping: 0.038206 ms MarkObjects: 0.448500 ms  DeleteObjects: 0.428256 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.561979 ms
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2774.
-Total: 1.085181 ms (FindLiveObjects: 0.220685 ms CreateObjectMapping: 0.095231 ms MarkObjects: 0.729347 ms  DeleteObjects: 0.039061 ms)
+Total: 0.995938 ms (FindLiveObjects: 0.033644 ms CreateObjectMapping: 0.037636 ms MarkObjects: 0.479578 ms  DeleteObjects: 0.444223 ms)
 
