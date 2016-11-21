@@ -23,15 +23,17 @@ public class ElevatorController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		//eDoors = GameObject.FindGameObjectsWithTag ("ElevatorDoor");
-		//ChangeTarget();
+		// Make sure the elevator starts on the first floor
 		Summon(1);
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+		// Move the elevator
 		elevator.position = Vector3.Lerp (elevator.position, newPosition, smooth * Time.deltaTime);
+		// Close all the elevator doors
 		CloseAll ();
+		// Open the door where the elevator is
 		if (Mathf.Abs (elevator.position.y - newPosition.y) <= 0.3) {
 			switch (targetFloor) {
 			case 5:
@@ -56,6 +58,7 @@ public class ElevatorController : MonoBehaviour {
 		}
 	}
 
+	// Make the elevator recognize key commands
 	void OnTriggerStay (Collider other){
 		if (other.tag == "Player") {
 			if(Input.GetKeyUp(KeyCode.Keypad1) || Input.GetKeyUp(KeyCode.Alpha1)){
@@ -81,6 +84,7 @@ public class ElevatorController : MonoBehaviour {
 		}
 	}
 
+	// Close all the elevator doors
 	void CloseAll(){
 		door1.GetComponent<ElevatorDoor>().CloseDoor ();
 		door2.GetComponent<ElevatorDoor>().CloseDoor ();
@@ -89,6 +93,7 @@ public class ElevatorController : MonoBehaviour {
 		door5.GetComponent<ElevatorDoor>().CloseDoor ();
 	}
 
+	// Summon the elevator to a specific floor
 	public void Summon(int floor){
 		switch (floor) {
 		case 5:
