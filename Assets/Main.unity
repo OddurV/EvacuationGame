@@ -470,6 +470,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!1 &178565724
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 178565725}
+  m_Layer: 0
+  m_Name: FireSpawnPoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &178565725
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 178565724}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1, y: 5.75, z: -17.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1724205985}
+  m_RootOrder: 0
 --- !u!1001 &180283780
 Prefab:
   m_ObjectHideFlags: 0
@@ -2534,6 +2562,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1288118189}
+  - {fileID: 1724205985}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!114 &1382937128
@@ -2953,6 +2982,52 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1124469746}
   m_Script: {fileID: 11500000, guid: 3452781daae0c1a4aaacb7a1277523a2, type: 3}
+--- !u!1 &1724205984
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1724205985}
+  - 114: {fileID: 1724205986}
+  m_Layer: 0
+  m_Name: FireManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1724205985
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1724205984}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 178565725}
+  m_Father: {fileID: 1382937127}
+  m_RootOrder: 1
+--- !u!114 &1724205986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1724205984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82811a3d5aa99004a95c88760494bf1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeRemaining: 40
+  smallFire: {fileID: 100000, guid: e1e6a88ec533ebd4bb02cc28a77b8ab4, type: 2}
+  spawnSmallFireTime: 10
+  spawnFirePoints:
+  - {fileID: 178565725}
 --- !u!1001 &1752835864
 Prefab:
   m_ObjectHideFlags: 0
