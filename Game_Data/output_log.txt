@@ -6,32 +6,70 @@ Direct3D:
     Vendor:   NVIDIA
     VRAM:     1990 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: \\hsnas6\StudentHome\2016\a16antma\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading \\hsnas6\StudentHome\2016\a16antma\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: \\hsnas6\StudentHome\2016\a16antma\Documents\GitHub\EvacuationGame\Game_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading \\hsnas6\StudentHome\2016\a16antma\Documents\GitHub\EvacuationGame\Game_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: \\hsnas6\StudentHome\2016\a16antma\Documents\GitHub\EvacuationGame\Game_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading \\hsnas6\StudentHome\2016\a16antma\Documents\GitHub\EvacuationGame\Game_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: \\hsnas6\StudentHome\2016\a16antma\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading \\hsnas6\StudentHome\2016\a16antma\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: \\hsnas6\StudentHome\2016\a16antma\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading \\hsnas6\StudentHome\2016\a16antma\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: \\hsnas6\StudentHome\2016\a16antma\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
-Loading \\hsnas6\StudentHome\2016\a16antma\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  1.770 seconds
-Platform assembly: \\hsnas6\StudentHome\2016\a16antma\Documents\GitHub\EvacuationGame\Game_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: \\hsnas6\StudentHome\2016\a16antma\Documents\GitHub\EvacuationGame\Game_Data\Managed\System.dll (this message is harmless)
+Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  1.664 seconds
+Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Initialize engine version: 5.3.5f1 (960ebf59018a)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA Quadro K2000  (ID=0xffe)
+    Vendor:   NVIDIA
+    VRAM:     1990 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  1.690 seconds
+Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.315291 ms
+UnloadTime: 0.557987 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: d14 -> priority: 1 
-  Thread -> id: da0 -> priority: 1 
+  Thread -> id: 1db4 -> priority: 1 
+  Thread -> id: 1db8 -> priority: 1 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 8.217363 ms
+UnloadTime: 3.885669 ms
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1483.
-Total: 2.519383 ms (FindLiveObjects: 0.924952 ms CreateObjectMapping: 0.069000 ms MarkObjects: 1.500339 ms  DeleteObjects: 0.023950 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2771.
+Total: 0.430822 ms (FindLiveObjects: 0.114334 ms CreateObjectMapping: 0.041628 ms MarkObjects: 0.259462 ms  DeleteObjects: 0.014256 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.673467 ms
+
+Unloading 60 unused Assets to reduce memory usage. Loaded Objects now: 331.
+Total: 0.948322 ms (FindLiveObjects: 0.032504 ms CreateObjectMapping: 0.038206 ms MarkObjects: 0.448500 ms  DeleteObjects: 0.428256 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.561979 ms
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2774.
+Total: 1.085181 ms (FindLiveObjects: 0.220685 ms CreateObjectMapping: 0.095231 ms MarkObjects: 0.729347 ms  DeleteObjects: 0.039061 ms)
 
