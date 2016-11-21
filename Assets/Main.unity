@@ -315,6 +315,98 @@ Transform:
   - {fileID: 665506740}
   m_Father: {fileID: 0}
   m_RootOrder: 11
+--- !u!1 &157654408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 147404, guid: 575a923258857e54a8567108008a8b74, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 157654409}
+  - 33: {fileID: 157654413}
+  - 65: {fileID: 157654412}
+  - 23: {fileID: 157654411}
+  - 114: {fileID: 157654410}
+  m_Layer: 10
+  m_Name: Quest C
+  m_TagString: Quest
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &157654409
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 439362, guid: 575a923258857e54a8567108008a8b74, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 157654408}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071067}
+  m_LocalPosition: {x: -0.25, y: 5.89, z: -2.72}
+  m_LocalScale: {x: 0.5999993, y: 0.5, z: 0.049999982}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1883570856}
+  m_RootOrder: 7
+--- !u!114 &157654410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 157654408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17030bf0e15216d4883b68833b7befb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questSystem: {fileID: 1382937126}
+--- !u!23 &157654411
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2311434, guid: 575a923258857e54a8567108008a8b74,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 157654408}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 69baa9008603e8446b1f454ea8bb4914, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!65 &157654412
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6564370, guid: 575a923258857e54a8567108008a8b74,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 157654408}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.5, z: 100}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &157654413
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3372538, guid: 575a923258857e54a8567108008a8b74,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 157654408}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &164837811
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,6 +520,98 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 489712, guid: d34ce3d497eb19947b419d8b6e0a3bab, type: 2}
   m_PrefabInternal: {fileID: 180283780}
+--- !u!1 &230510494
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 147404, guid: 575a923258857e54a8567108008a8b74, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 230510495}
+  - 33: {fileID: 230510499}
+  - 65: {fileID: 230510498}
+  - 23: {fileID: 230510497}
+  - 114: {fileID: 230510496}
+  m_Layer: 10
+  m_Name: Quest G
+  m_TagString: Quest
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &230510495
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 439362, guid: 575a923258857e54a8567108008a8b74, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 230510494}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071067}
+  m_LocalPosition: {x: -0.25, y: 20.73, z: 7.65}
+  m_LocalScale: {x: 0.5999998, y: 0.5, z: 0.049999997}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1883570856}
+  m_RootOrder: 3
+--- !u!114 &230510496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 230510494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17030bf0e15216d4883b68833b7befb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questSystem: {fileID: 1382937126}
+--- !u!23 &230510497
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2311434, guid: 575a923258857e54a8567108008a8b74,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 230510494}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 69baa9008603e8446b1f454ea8bb4914, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!65 &230510498
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6564370, guid: 575a923258857e54a8567108008a8b74,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 230510494}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.5, z: 100}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &230510499
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3372538, guid: 575a923258857e54a8567108008a8b74,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 230510494}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &240613045 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11465856, guid: 00c26d786ff6a414481abee94c44f204,
@@ -988,7 +1172,7 @@ GameObject:
   - 23: {fileID: 531314693}
   - 114: {fileID: 531314692}
   m_Layer: 10
-  m_Name: Quest A
+  m_Name: Quest H
   m_TagString: Quest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1001,12 +1185,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 531314690}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071067}
-  m_LocalPosition: {x: -0.25, y: 0.59, z: 0.27}
+  m_LocalPosition: {x: -0.2, y: 25.73, z: 24.6}
   m_LocalScale: {x: 0.5999999, y: 0.5, z: 0.05}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_Children: []
   m_Father: {fileID: 1883570856}
-  m_RootOrder: 0
+  m_RootOrder: 2
 --- !u!114 &531314692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1369,6 +1553,190 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.5
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!1 &672206537
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 147404, guid: 575a923258857e54a8567108008a8b74, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 672206538}
+  - 33: {fileID: 672206542}
+  - 65: {fileID: 672206541}
+  - 23: {fileID: 672206540}
+  - 114: {fileID: 672206539}
+  m_Layer: 10
+  m_Name: Quest F
+  m_TagString: Quest
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &672206538
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 439362, guid: 575a923258857e54a8567108008a8b74, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 672206537}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071067}
+  m_LocalPosition: {x: -0.2, y: 10.73, z: 26.6}
+  m_LocalScale: {x: 0.59999967, y: 0.5, z: 0.049999993}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1883570856}
+  m_RootOrder: 4
+--- !u!114 &672206539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 672206537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17030bf0e15216d4883b68833b7befb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questSystem: {fileID: 1382937126}
+--- !u!23 &672206540
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2311434, guid: 575a923258857e54a8567108008a8b74,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 672206537}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 69baa9008603e8446b1f454ea8bb4914, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!65 &672206541
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6564370, guid: 575a923258857e54a8567108008a8b74,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 672206537}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.5, z: 100}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &672206542
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3372538, guid: 575a923258857e54a8567108008a8b74,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 672206537}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &678967926
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 147404, guid: 575a923258857e54a8567108008a8b74, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 678967927}
+  - 33: {fileID: 678967931}
+  - 65: {fileID: 678967930}
+  - 23: {fileID: 678967929}
+  - 114: {fileID: 678967928}
+  m_Layer: 10
+  m_Name: Quest D
+  m_TagString: Quest
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &678967927
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 439362, guid: 575a923258857e54a8567108008a8b74, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 678967926}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071067}
+  m_LocalPosition: {x: -0.25, y: 5.79, z: 18.04}
+  m_LocalScale: {x: 0.5999994, y: 0.5, z: 0.049999986}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1883570856}
+  m_RootOrder: 6
+--- !u!114 &678967928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 678967926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17030bf0e15216d4883b68833b7befb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questSystem: {fileID: 1382937126}
+--- !u!23 &678967929
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2311434, guid: 575a923258857e54a8567108008a8b74,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 678967926}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 69baa9008603e8446b1f454ea8bb4914, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!65 &678967930
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6564370, guid: 575a923258857e54a8567108008a8b74,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 678967926}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.5, z: 100}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &678967931
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3372538, guid: 575a923258857e54a8567108008a8b74,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 678967926}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &715156693 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11421836, guid: 00c26d786ff6a414481abee94c44f204,
@@ -1612,6 +1980,98 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1124469746}
   m_Script: {fileID: 11500000, guid: 3452781daae0c1a4aaacb7a1277523a2, type: 3}
+--- !u!1 &1039678813
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 147404, guid: 575a923258857e54a8567108008a8b74, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1039678814}
+  - 33: {fileID: 1039678818}
+  - 65: {fileID: 1039678817}
+  - 23: {fileID: 1039678816}
+  - 114: {fileID: 1039678815}
+  m_Layer: 10
+  m_Name: Quest A
+  m_TagString: Quest
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1039678814
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 439362, guid: 575a923258857e54a8567108008a8b74, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1039678813}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071067}
+  m_LocalPosition: {x: -0.25, y: 0.59, z: 15}
+  m_LocalScale: {x: 0.59999907, y: 0.5, z: 0.049999975}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1883570856}
+  m_RootOrder: 9
+--- !u!114 &1039678815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1039678813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17030bf0e15216d4883b68833b7befb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questSystem: {fileID: 1382937126}
+--- !u!23 &1039678816
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2311434, guid: 575a923258857e54a8567108008a8b74,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1039678813}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 69baa9008603e8446b1f454ea8bb4914, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!65 &1039678817
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6564370, guid: 575a923258857e54a8567108008a8b74,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1039678813}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.5, z: 100}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1039678818
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3372538, guid: 575a923258857e54a8567108008a8b74,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1039678813}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &1046347398 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11419320, guid: acd3304d1326742a198c343adac03ccd,
@@ -2101,6 +2561,98 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pause: {fileID: 1366501215}
+--- !u!1 &1419176177
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 147404, guid: 575a923258857e54a8567108008a8b74, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1419176178}
+  - 33: {fileID: 1419176182}
+  - 65: {fileID: 1419176181}
+  - 23: {fileID: 1419176180}
+  - 114: {fileID: 1419176179}
+  m_Layer: 10
+  m_Name: Quest E
+  m_TagString: Quest
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1419176178
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 439362, guid: 575a923258857e54a8567108008a8b74, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1419176177}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071067}
+  m_LocalPosition: {x: -0.25, y: 10.8, z: 2.01}
+  m_LocalScale: {x: 0.59999955, y: 0.5, z: 0.04999999}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1883570856}
+  m_RootOrder: 5
+--- !u!114 &1419176179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1419176177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17030bf0e15216d4883b68833b7befb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questSystem: {fileID: 1382937126}
+--- !u!23 &1419176180
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2311434, guid: 575a923258857e54a8567108008a8b74,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1419176177}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 69baa9008603e8446b1f454ea8bb4914, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!65 &1419176181
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6564370, guid: 575a923258857e54a8567108008a8b74,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1419176177}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.5, z: 100}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1419176182
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3372538, guid: 575a923258857e54a8567108008a8b74,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1419176177}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1462238924
 Prefab:
   m_ObjectHideFlags: 0
@@ -2316,7 +2868,7 @@ GameObject:
   - 23: {fileID: 1622102740}
   - 114: {fileID: 1622102739}
   m_Layer: 10
-  m_Name: Quest B
+  m_Name: Quest I
   m_TagString: Quest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2389,7 +2941,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1622102738}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071067}
-  m_LocalPosition: {x: -0.25, y: 0.59, z: -12.69}
+  m_LocalPosition: {x: -0.2, y: 20.79, z: -6.8}
   m_LocalScale: {x: 0.6, y: 0.5, z: 0.050000004}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_Children: []
@@ -2643,6 +3195,98 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.5
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!1 &1870823229
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 147404, guid: 575a923258857e54a8567108008a8b74, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1870823230}
+  - 33: {fileID: 1870823234}
+  - 65: {fileID: 1870823233}
+  - 23: {fileID: 1870823232}
+  - 114: {fileID: 1870823231}
+  m_Layer: 10
+  m_Name: Quest B
+  m_TagString: Quest
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1870823230
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 439362, guid: 575a923258857e54a8567108008a8b74, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1870823229}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071067}
+  m_LocalPosition: {x: -0.25, y: 0.59, z: -17.57}
+  m_LocalScale: {x: 0.5999992, y: 0.5, z: 0.04999998}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1883570856}
+  m_RootOrder: 8
+--- !u!114 &1870823231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1870823229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17030bf0e15216d4883b68833b7befb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questSystem: {fileID: 1382937126}
+--- !u!23 &1870823232
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2311434, guid: 575a923258857e54a8567108008a8b74,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1870823229}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 69baa9008603e8446b1f454ea8bb4914, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!65 &1870823233
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6564370, guid: 575a923258857e54a8567108008a8b74,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1870823229}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.5, z: 100}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1870823234
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3372538, guid: 575a923258857e54a8567108008a8b74,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1870823229}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1882672145
 Prefab:
   m_ObjectHideFlags: 0
@@ -2719,9 +3363,16 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 531314691}
-  - {fileID: 1622102743}
   - {fileID: 1949895878}
+  - {fileID: 1622102743}
+  - {fileID: 531314691}
+  - {fileID: 230510495}
+  - {fileID: 672206538}
+  - {fileID: 1419176178}
+  - {fileID: 678967927}
+  - {fileID: 157654409}
+  - {fileID: 1870823230}
+  - {fileID: 1039678814}
   m_Father: {fileID: 0}
   m_RootOrder: 10
 --- !u!1001 &1922880289
@@ -2787,7 +3438,7 @@ GameObject:
   - 23: {fileID: 1949895880}
   - 114: {fileID: 1949895879}
   m_Layer: 10
-  m_Name: Quest C
+  m_Name: Quest J
   m_TagString: Quest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2800,12 +3451,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1949895877}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071067}
-  m_LocalPosition: {x: -0.25, y: 0.59, z: -7.7}
+  m_LocalPosition: {x: -0.25, y: 15.85, z: 10.19}
   m_LocalScale: {x: 0.5999999, y: 0.5, z: 0.05}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_Children: []
   m_Father: {fileID: 1883570856}
-  m_RootOrder: 2
+  m_RootOrder: 0
 --- !u!114 &1949895879
 MonoBehaviour:
   m_ObjectHideFlags: 0
