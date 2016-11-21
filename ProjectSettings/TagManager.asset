@@ -8,6 +8,7 @@ TagManager:
   - Quest
   - ExitDoor
   - AIrunning
+  - SmallFire
   layers:
   - Default
   - TransparentFX
