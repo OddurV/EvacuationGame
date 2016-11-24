@@ -28,8 +28,8 @@ public class QuestSystem : MonoBehaviour {
 	public void QuestCompleted(){
 		questCounter++;
 		if (questCounter >= quests.Length) {
+			fireManager.GetComponent<FireStart>().StartFire ();
 			messageText.text = "All quests completed";
-			fireManager.GetComponent<FireStart>.StartFire ();
 			return;
 		}
 		quests [questCounter].SetActive (true);

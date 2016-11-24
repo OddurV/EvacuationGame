@@ -11,7 +11,7 @@ public class FireStart : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		
-		InvokeRepeating ("SpawnSmallFire", timeRemaining, spawnSmallFireTime);
+		//InvokeRepeating ("SpawnSmallFire", timeRemaining, spawnSmallFireTime);
 
 	}
 	
