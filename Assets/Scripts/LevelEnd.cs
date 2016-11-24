@@ -7,7 +7,7 @@ public class LevelEnd : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
-            DontDestroyOnLoad(transform.gameObject);
+
             Application.LoadLevel("Score_Menu");
         }
     }

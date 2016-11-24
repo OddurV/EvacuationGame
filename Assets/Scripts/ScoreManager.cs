@@ -8,7 +8,6 @@ public class ScoreManager : MonoBehaviour {
 
     void Start()
     {
-        
     }
 
     public void ScoreAddiction()
