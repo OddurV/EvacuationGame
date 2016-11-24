@@ -4,7 +4,8 @@ using System.Collections;
 
 public class QuestSystem : MonoBehaviour {
 
-	public Text messageText;
+    public ScoreManager scManager;
+    public Text messageText;
 	public GameObject[] quests;
 	private int questCounter;
 
@@ -26,7 +27,8 @@ public class QuestSystem : MonoBehaviour {
 	//Post: The next quest has been activated
 	public void QuestCompleted(){
 		questCounter++;
-		if (questCounter >= quests.Length) {
+        scManager.ScoreAddiction();
+        if (questCounter >= quests.Length) {
 			messageText.text = "All quests completed";
 			return;
 		}

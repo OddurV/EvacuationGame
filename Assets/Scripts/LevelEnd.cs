@@ -7,7 +7,7 @@ public class LevelEnd : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
-            Application.LoadLevel("Main_Menu");
+            Application.LoadLevel("Score_Menu");
         }
     }
 }

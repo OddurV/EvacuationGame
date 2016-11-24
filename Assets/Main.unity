@@ -2115,12 +2115,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1039678813}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1046347398 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11419320, guid: acd3304d1326742a198c343adac03ccd,
-    type: 2}
-  m_PrefabInternal: {fileID: 769042746}
-  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!224 &1046347400 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 22491130, guid: acd3304d1326742a198c343adac03ccd,
@@ -2416,6 +2410,12 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 485334, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
   m_PrefabInternal: {fileID: 1124469746}
+--- !u!114 &1317869298 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11419320, guid: acd3304d1326742a198c343adac03ccd,
+    type: 2}
+  m_PrefabInternal: {fileID: 769042746}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1 &1333191307
 GameObject:
   m_ObjectHideFlags: 0
@@ -2619,6 +2619,7 @@ GameObject:
   - 114: {fileID: 1382937126}
   - 114: {fileID: 1382937128}
   - 114: {fileID: 1382937129}
+  - 114: {fileID: 1382937130}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2637,6 +2638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf79e023f76c4624595a989204c36f0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scManager: {fileID: 1382937130}
   messageText: {fileID: 2116425165}
   quests: []
 --- !u!4 &1382937127
@@ -2665,7 +2667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d58d8e47192c6470ea8da8799c4a5210, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 1046347398}
+  timerText: {fileID: 1317869298}
   finnished: 0
 --- !u!114 &1382937129
 MonoBehaviour:
@@ -2679,6 +2681,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pause: {fileID: 1366501215}
+--- !u!114 &1382937130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1382937125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e93407b78e96a14da2195c52259844c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
 --- !u!1 &1419176177
 GameObject:
   m_ObjectHideFlags: 0
