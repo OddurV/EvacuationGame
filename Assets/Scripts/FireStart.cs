@@ -4,28 +4,25 @@ using System.Collections;
 public class FireStart : MonoBehaviour {
 
 	public float timeRemaining = 40f;
-	public GameObject smallFire;
-	public float spawnSmallFireTime = 10;
+	public GameObject fire;
+	public float spawnSmallFireTime = 15f;
 	public Transform [] spawnFirePoints;
 
 	// Use this for initialization
 	void Start () {
 		
-		InvokeRepeating ("SpawnSmallFire", timeRemaining, spawnSmallFireTime);
+		Invoke ("StartFire", timeRemaining);
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	}
-
-	void StartFire() {
-		Debug.Log ("StartFire!", gameObject);
-		SpawnSmallFire ();
-	}
-
-	void SpawnSmallFire () {
+		
+	//The fire starts in a random predefined spawn point
+	void StartFire () {
 		int spawnPointIndex = Random.Range (0, spawnFirePoints.Length);
-		Instantiate (smallFire, spawnFirePoints[spawnPointIndex].position, spawnFirePoints[spawnPointIndex].rotation);
+		Instantiate (fire, spawnFirePoints[spawnPointIndex].position, spawnFirePoints[spawnPointIndex].rotation);
 	}
+		
 }

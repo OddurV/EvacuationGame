@@ -8,6 +8,7 @@ TagManager:
   - Quest
   - ExitDoor
   - AIrunning
+  - Fire
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Spawn Points
   - 
   - 
   - 
