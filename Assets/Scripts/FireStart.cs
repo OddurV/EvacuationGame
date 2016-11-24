@@ -7,11 +7,12 @@ public class FireStart : MonoBehaviour {
 	public GameObject smallFire;
 	public float spawnSmallFireTime = 10;
 	public Transform [] spawnFirePoints;
+	public GameObject gameManager;
 
 	// Use this for initialization
 	void Start () {
 		
-		//InvokeRepeating ("SpawnSmallFire", timeRemaining, spawnSmallFireTime);
+		InvokeRepeating ("StartFire", timeRemaining, spawnSmallFireTime);
 
 	}
 	
@@ -21,6 +22,7 @@ public class FireStart : MonoBehaviour {
 
 	public void StartFire() {
 		Debug.Log ("StartFire!", gameObject);
+		gameManager.GetComponent<GameManager> ().isThereAFire = true;
 		SpawnSmallFire ();
 	}
 

@@ -27,9 +27,9 @@ public class QuestSystem : MonoBehaviour {
 	//Post: The next quest has been activated
 	public void QuestCompleted(){
 		questCounter++;
-		if (questCounter >= quests.Length) {
-			fireManager.GetComponent<FireStart>().StartFire ();
+		if (questCounter >= 2){//quests.Length) { //number reduced for testing purposes
 			messageText.text = "All quests completed";
+			fireManager.GetComponent<FireStart>().StartFire ();
 			return;
 		}
 		quests [questCounter].SetActive (true);

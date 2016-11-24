@@ -4,6 +4,8 @@ using UnityStandardAssets.Characters.ThirdPerson;
 
 public class TriggerAI : MonoBehaviour {
 
+	public GameObject gameManager;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -16,7 +18,7 @@ public class TriggerAI : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+		if (other.tag == "Player" && gameManager.GetComponent<GameManager> ().isTheAlarmOn)
         {
             this.GetComponent<AICharacterControl>().enabled = true;
         }
