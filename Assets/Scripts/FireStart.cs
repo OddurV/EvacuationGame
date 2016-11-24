@@ -19,7 +19,7 @@ public class FireStart : MonoBehaviour {
 	void Update () {
 	}
 
-	void StartFire() {
+	public void StartFire() {
 		Debug.Log ("StartFire!", gameObject);
 		SpawnSmallFire ();
 	}

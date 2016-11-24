@@ -720,6 +720,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1300744101}
+  <agent>k__BackingField: {fileID: 0}
+  <character>k__BackingField: {fileID: 0}
 --- !u!114 &288022073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -738,6 +740,7 @@ MonoBehaviour:
   - {fileID: 809758981}
   - {fileID: 240613045}
   - {fileID: 715156693}
+  i: 0
 --- !u!1001 &296605762
 Prefab:
   m_ObjectHideFlags: 0
@@ -1573,6 +1576,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 402385077}
+  <agent>k__BackingField: {fileID: 0}
+  <character>k__BackingField: {fileID: 0}
 --- !u!114 &665506743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2353,6 +2358,7 @@ MonoBehaviour:
   currentState: 
   smooth: 0.7
   resetTime: 7
+  targetFloor: 1
   door1: {fileID: 612441898}
   door2: {fileID: 1218403919}
   door3: {fileID: 1552489399}
@@ -2639,6 +2645,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   messageText: {fileID: 2116425165}
   quests: []
+  questCounter: 0
+  fireManager: {fileID: 1724205984}
 --- !u!4 &1382937127
 Transform:
   m_ObjectHideFlags: 0
@@ -2666,6 +2674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 1046347398}
+  startTime: 0
   finnished: 0
 --- !u!114 &1382937129
 MonoBehaviour:
@@ -3347,6 +3356,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 402385077}
+  <agent>k__BackingField: {fileID: 0}
+  <character>k__BackingField: {fileID: 0}
 --- !u!135 &1815188131
 SphereCollider:
   m_ObjectHideFlags: 0
