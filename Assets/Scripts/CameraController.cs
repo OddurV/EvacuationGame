@@ -8,16 +8,20 @@ public class CameraController : MonoBehaviour {
     public Vector3 offset;
 
 	static private float zoomParameterMax = 25.0f;
-	static private float zoomParamYmin = 0.0f;
-	static private float zoomParamYmax = 0.0f;
-	static private float zoomParamZmin = 0.0f;
-	static private float zoomParamZmax = 0.0f;
+	static private float zoomParamYmin;
+	static private float zoomParamYmax;
+	static private float zoomParamZmin;
+	static private float zoomParamZmax;
 	static private Vector3 origin;
 	static private Vector3 zoomMax = new Vector3(20.0f,0.0f,0.0f);
 
     // Use this for initialization
     void Start () {
         Time.timeScale = 1;
+		zoomParamYmin = 0.0f;
+		zoomParamYmax = 0.0f;
+		zoomParamZmin = 0.0f;
+		zoomParamZmax = 0.0f;
         offset = transform.position - player.transform.position;
 		origin = player.transform.position;
 	}
