@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿// to be deleted
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 
@@ -21,7 +22,7 @@ public class ScoreMenu : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        score.text = "Score : " + txtContents;
+        score.text = "Score : " + score;
         time.text = "Time : " + txtContents1;
     }
 }

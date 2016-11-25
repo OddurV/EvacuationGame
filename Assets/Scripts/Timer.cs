@@ -7,7 +7,7 @@ public class Timer : MonoBehaviour {
 
     public Text timerText;
 	public bool finnished = false;
-    public static string finalTime;
+    public string finalTime;
     
     private float startTime;
     
