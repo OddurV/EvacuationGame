@@ -1628,7 +1628,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 408730, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 496262, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1891,6 +1891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dce2dff8f004164db79502e8b9c66ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 1382937125}
 --- !u!135 &665506744
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2553,7 +2554,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 454252, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11493140, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
       propertyPath: elevatorController
@@ -2623,6 +2624,30 @@ Prefab:
       propertyPath: theNewScript
       value: 
       objectReference: {fileID: 1382937128}
+    - target: {fileID: 11413696, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1382937125}
+    - target: {fileID: 11400800, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1382937125}
+    - target: {fileID: 11434036, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1382937125}
+    - target: {fileID: 11445808, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1382937125}
+    - target: {fileID: 11465856, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1382937125}
+    - target: {fileID: 11421836, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1382937125}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
   m_IsPrefabParent: 0
@@ -2821,11 +2846,13 @@ MonoBehaviour:
   currentState: 
   smooth: 0.7
   resetTime: 7
+  playerIsInElevator: 0
   door1: {fileID: 612441898}
   door2: {fileID: 1218403919}
   door3: {fileID: 1552489399}
   door4: {fileID: 1799396162}
   door5: {fileID: 1544525130}
+  gameManager: {fileID: 1382937125}
 --- !u!65 &1288118191
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3215,6 +3242,7 @@ GameObject:
   - 114: {fileID: 1382937128}
   - 114: {fileID: 1382937129}
   - 114: {fileID: 1382937130}
+  - 114: {fileID: 1382937131}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3236,6 +3264,7 @@ MonoBehaviour:
   scManager: {fileID: 1382937130}
   messageText: {fileID: 2116425165}
   quests: []
+  fireManager: {fileID: 1724205984}
 --- !u!4 &1382937127
 Transform:
   m_ObjectHideFlags: 0
@@ -3287,6 +3316,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+--- !u!114 &1382937131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1382937125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f4d8882cbbab5648968dfc4979656f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isThereAFire: 0
+  isTheAlarmOn: 0
 --- !u!1 &1419176177
 GameObject:
   m_ObjectHideFlags: 0
@@ -3946,9 +3988,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82811a3d5aa99004a95c88760494bf1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 10
+  timeRemaining: 30
   fire: {fileID: 100000, guid: e1e6a88ec533ebd4bb02cc28a77b8ab4, type: 2}
-  spawnSmallFireTime: 10
   spawnFirePoints:
   - {fileID: 1883558816}
   - {fileID: 178565725}
@@ -3969,6 +4010,7 @@ MonoBehaviour:
   - {fileID: 950282464}
   - {fileID: 1231048873}
   - {fileID: 384464627}
+  gameManager: {fileID: 1382937125}
 --- !u!1 &1769927110
 GameObject:
   m_ObjectHideFlags: 0
@@ -4093,6 +4135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dce2dff8f004164db79502e8b9c66ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 1382937125}
 --- !u!114 &1815188130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4330,7 +4373,7 @@ Transform:
   - {fileID: 1870823230}
   - {fileID: 1949895878}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
 --- !u!1001 &1922880289
 Prefab:
   m_ObjectHideFlags: 0
