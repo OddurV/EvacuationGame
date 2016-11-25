@@ -14,6 +14,7 @@ public class ElevatorController : MonoBehaviour {
 	public float smooth;
 	public float resetTime;
 	private int targetFloor = 1;
+	public bool playerIsInElevator = false; //should be private, is public now for debug purposes
 
 	public GameObject door1;
 	public GameObject door2;
@@ -21,17 +22,22 @@ public class ElevatorController : MonoBehaviour {
 	public GameObject door4;
 	public GameObject door5;
 
+	public GameObject gameManager;
+
 	// Use this for initialization
 	void Start () {
-		//eDoors = GameObject.FindGameObjectsWithTag ("ElevatorDoor");
-		//ChangeTarget();
+		// Make sure the elevator starts on the first floor
 		Summon(1);
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+		// Move the elevator
 		elevator.position = Vector3.Lerp (elevator.position, newPosition, smooth * Time.deltaTime);
+		// Close all the elevator doors
 		CloseAll ();
+		if (gameManager.GetComponent<GameManager> ().isThereAFire && !playerIsInElevator) {return;}
+		// Open the door where the elevator is
 		if (Mathf.Abs (elevator.position.y - newPosition.y) <= 0.3) {
 			switch (targetFloor) {
 			case 5:
@@ -56,6 +62,7 @@ public class ElevatorController : MonoBehaviour {
 		}
 	}
 
+	// Make the elevator recognize key commands
 	void OnTriggerStay (Collider other){
 		if (other.tag == "Player") {
 			if(Input.GetKeyUp(KeyCode.Keypad1) || Input.GetKeyUp(KeyCode.Alpha1)){
@@ -81,6 +88,22 @@ public class ElevatorController : MonoBehaviour {
 		}
 	}
 
+	void OnTriggerEnter (Collider other){
+		if (other.tag == "Player") {
+			playerIsInElevator = true;
+		}
+	}
+
+	void OnTriggerExit (Collider other){
+		if (other.tag == "Player") {
+			playerIsInElevator = false;
+			if (gameManager.GetComponent<GameManager> ().isThereAFire) {
+				CloseAll ();
+			}
+		}
+	}
+
+	// Close all the elevator doors
 	void CloseAll(){
 		door1.GetComponent<ElevatorDoor>().CloseDoor ();
 		door2.GetComponent<ElevatorDoor>().CloseDoor ();
@@ -89,7 +112,9 @@ public class ElevatorController : MonoBehaviour {
 		door5.GetComponent<ElevatorDoor>().CloseDoor ();
 	}
 
+	// Summon the elevator to a specific floor
 	public void Summon(int floor){
+		if (gameManager.GetComponent<GameManager> ().isThereAFire) {return;}
 		switch (floor) {
 		case 5:
 			currentState = "Moving To Position 5";

@@ -4,7 +4,7 @@ using System.Collections;
 public class Window : MonoBehaviour {
 
 	public float AngleY;
-
+    
 	private float targetValue = 0f;
 	private float currentValue = 180f;
 	private float easing = 0.05f;
@@ -18,7 +18,7 @@ public class Window : MonoBehaviour {
 	void OnTriggerEnter(Collider other){
 		if (other.tag == "Player") {
 			Debug.Log ("Closed!!!!!");
-			GetComponent<Collider> ().enabled = false;
+            GetComponent<Collider> ().enabled = false;
 			targetValue = AngleY;
 			currentValue = 0;
 		}
