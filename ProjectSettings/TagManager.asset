@@ -9,6 +9,7 @@ TagManager:
   - ExitDoor
   - AIrunning
   - Fire
+  - Smoke
   layers:
   - Default
   - TransparentFX

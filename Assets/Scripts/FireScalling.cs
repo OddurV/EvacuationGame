@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class FireSpread : MonoBehaviour {
+public class FireScalling : MonoBehaviour {
 
     public float maxSize;
     public float growFactor;

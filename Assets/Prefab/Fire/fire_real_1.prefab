@@ -42,7 +42,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a96459332558624a911fa6a27a85df3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSize: 30
+  maxSize: 10
   growFactor: 1
   waitTime: 2
 --- !u!198 &19800000
