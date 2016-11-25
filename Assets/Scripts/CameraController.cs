@@ -17,7 +17,8 @@ public class CameraController : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		offset = transform.position - player.transform.position;
+        Time.timeScale = 1;
+        offset = transform.position - player.transform.position;
 		origin = player.transform.position;
 	}
 	
