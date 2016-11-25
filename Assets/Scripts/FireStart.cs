@@ -5,8 +5,8 @@ public class FireStart : MonoBehaviour {
 
 	public float timeRemaining = 40f;
 	public GameObject fire;
-	public float spawnSmallFireTime = 15f;
 	public Transform [] spawnFirePoints;
+	public GameObject gameManager;
 
 	// Use this for initialization
 	void Start () {
@@ -20,7 +20,8 @@ public class FireStart : MonoBehaviour {
 	}
 		
 	//The fire starts in a random predefined spawn point
-	void StartFire () {
+	public void StartFire () {
+		gameManager.GetComponent<GameManager> ().isThereAFire = true;
 		int spawnPointIndex = Random.Range (0, spawnFirePoints.Length);
 		Instantiate (fire, spawnFirePoints[spawnPointIndex].position, spawnFirePoints[spawnPointIndex].rotation);
 	}
