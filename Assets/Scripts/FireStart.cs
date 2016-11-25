@@ -24,5 +24,5 @@ public class FireStart : MonoBehaviour {
 		int spawnPointIndex = Random.Range (0, spawnFirePoints.Length);
 		Instantiate (fire, spawnFirePoints[spawnPointIndex].position, spawnFirePoints[spawnPointIndex].rotation);
 	}
-		
+
 }
