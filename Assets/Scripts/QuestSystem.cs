@@ -7,7 +7,7 @@ public class QuestSystem : MonoBehaviour {
     public ScoreManager scManager;
     public Text messageText;
 	public GameObject[] quests;
-	private int questCounter;
+	public int questCounter = 0;
 	public GameObject fireManager;
 
 	void Start(){
@@ -28,7 +28,7 @@ public class QuestSystem : MonoBehaviour {
 	//Post: The next quest has been activated
 	public void QuestCompleted(){
 		questCounter++;
-        scManager.ScoreAddiction();
+        scManager.ScoreAddition();
 		if (questCounter >= quests.Length) {
 			messageText.text = "All quests completed";
 			fireManager.GetComponent<FireStart> ().StartFire ();
