@@ -4382,26 +4382,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 11494606, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+    - target: {fileID: 11421336, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: elevatorController
+      value: 
+      objectReference: {fileID: 1288118190}
+    - target: {fileID: 11429002, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
       propertyPath: theNewScript
       value: 
       objectReference: {fileID: 1382937128}
-    - target: {fileID: 11493140, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
-      propertyPath: elevatorController
-      value: 
-      objectReference: {fileID: 1288118190}
-    - target: {fileID: 11492412, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
-      propertyPath: elevatorController
-      value: 
-      objectReference: {fileID: 1288118190}
-    - target: {fileID: 11491576, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
-      propertyPath: elevatorController
-      value: 
-      objectReference: {fileID: 1288118190}
-    - target: {fileID: 11451394, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
-      propertyPath: elevatorController
-      value: 
-      objectReference: {fileID: 1288118190}
     - target: {fileID: 11448822, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
       propertyPath: scmanager
       value: 
@@ -4422,14 +4410,26 @@ Prefab:
       propertyPath: score
       value: 
       objectReference: {fileID: 1997977123}
-    - target: {fileID: 11429002, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
-      propertyPath: theNewScript
-      value: 
-      objectReference: {fileID: 1382937128}
-    - target: {fileID: 11421336, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+    - target: {fileID: 11451394, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
       propertyPath: elevatorController
       value: 
       objectReference: {fileID: 1288118190}
+    - target: {fileID: 11491576, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: elevatorController
+      value: 
+      objectReference: {fileID: 1288118190}
+    - target: {fileID: 11492412, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: elevatorController
+      value: 
+      objectReference: {fileID: 1288118190}
+    - target: {fileID: 11493140, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: elevatorController
+      value: 
+      objectReference: {fileID: 1288118190}
+    - target: {fileID: 11494606, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: theNewScript
+      value: 
+      objectReference: {fileID: 1382937128}
     - target: {fileID: 11465856, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
       propertyPath: gameManager
       value: 
@@ -5597,7 +5597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82811a3d5aa99004a95c88760494bf1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 120
+  timeRemaining: 30
   fire: {fileID: 100000, guid: e1e6a88ec533ebd4bb02cc28a77b8ab4, type: 2}
   spawnFirePoints:
   - {fileID: 1883558816}
