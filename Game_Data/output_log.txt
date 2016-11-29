@@ -1,26 +1,62 @@
 Initialize engine version: 5.3.5f1 (960ebf59018a)
 GfxDevice: creating device client; threaded=1
 Direct3D:
-    Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA Quadro K2000  (ID=0xffe)
+    Version:  Direct3D 11.0 [level 10.0]
+    Renderer: NVIDIA GeForce 8400M GS (ID=0x427)
     Vendor:   NVIDIA
-    VRAM:     1990 MB
+    VRAM:     1000 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
-Loading \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  1.429 seconds
-Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: \\hsnas6\StudentHome\2016\a16kongk\Documents\GitHub\EvacuationGame\Game_Data\Managed\System.dll (this message is harmless)
-desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+Platform assembly: C:\Users\kosta\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\kosta\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\kosta\Documents\GitHub\EvacuationGame\Game_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\kosta\Documents\GitHub\EvacuationGame\Game_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\kosta\Documents\GitHub\EvacuationGame\Game_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\kosta\Documents\GitHub\EvacuationGame\Game_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\kosta\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\kosta\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\kosta\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\kosta\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\kosta\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\kosta\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.151 seconds
+Platform assembly: C:\Users\kosta\Documents\GitHub\EvacuationGame\Game_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\kosta\Documents\GitHub\EvacuationGame\Game_Data\Managed\System.dll (this message is harmless)
+desktop: 1280x800 60Hz; virtual: 1280x800 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 79.539200 ms
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 2d8 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 32.183285 ms
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3606.
+Total: 31.198275 ms (FindLiveObjects: 22.333645 ms CreateObjectMapping: 0.102167 ms MarkObjects: 8.712600 ms  DeleteObjects: 0.040573 ms)
+
+Closed!!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Closed!!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Closed!!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Closed!!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Closed!!!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.639261 ms
+
+Unloading 191 unused Assets to reduce memory usage. Loaded Objects now: 332.
+Total: 0.932218 ms (FindLiveObjects: 0.054750 ms CreateObjectMapping: 0.033729 ms MarkObjects: 0.317257 ms  DeleteObjects: 0.518170 ms)
+
