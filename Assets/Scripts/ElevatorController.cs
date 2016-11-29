@@ -14,12 +14,15 @@ public class ElevatorController : MonoBehaviour {
 	public float smooth;
 	public float resetTime;
 	private int targetFloor = 1;
+	public bool playerIsInElevator = false; //should be private, is public now for debug purposes
 
 	public GameObject door1;
 	public GameObject door2;
 	public GameObject door3;
 	public GameObject door4;
 	public GameObject door5;
+
+	public GameObject gameManager;
 
 	// Use this for initialization
 	void Start () {
@@ -33,6 +36,7 @@ public class ElevatorController : MonoBehaviour {
 		elevator.position = Vector3.Lerp (elevator.position, newPosition, smooth * Time.deltaTime);
 		// Close all the elevator doors
 		CloseAll ();
+		if (gameManager.GetComponent<GameManager> ().isThereAFire && !playerIsInElevator) {return;}
 		// Open the door where the elevator is
 		if (Mathf.Abs (elevator.position.y - newPosition.y) <= 0.3) {
 			switch (targetFloor) {
@@ -84,6 +88,21 @@ public class ElevatorController : MonoBehaviour {
 		}
 	}
 
+	void OnTriggerEnter (Collider other){
+		if (other.tag == "Player") {
+			playerIsInElevator = true;
+		}
+	}
+
+	void OnTriggerExit (Collider other){
+		if (other.tag == "Player") {
+			playerIsInElevator = false;
+			if (gameManager.GetComponent<GameManager> ().isThereAFire) {
+				CloseAll ();
+			}
+		}
+	}
+
 	// Close all the elevator doors
 	void CloseAll(){
 		door1.GetComponent<ElevatorDoor>().CloseDoor ();
@@ -95,6 +114,7 @@ public class ElevatorController : MonoBehaviour {
 
 	// Summon the elevator to a specific floor
 	public void Summon(int floor){
+		if (gameManager.GetComponent<GameManager> ().isThereAFire) {return;}
 		switch (floor) {
 		case 5:
 			currentState = "Moving To Position 5";

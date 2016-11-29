@@ -10,6 +10,7 @@ TagManager:
   - AIrunning
   - Fire
   - Smoke
+  - RightSmokeContainer
   layers:
   - Default
   - TransparentFX

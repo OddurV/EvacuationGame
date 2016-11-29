@@ -8,6 +8,7 @@ public class QuestSystem : MonoBehaviour {
     public Text messageText;
 	public GameObject[] quests;
 	private int questCounter;
+	public GameObject fireManager;
 
 	void Start(){
 		quests = GameObject.FindGameObjectsWithTag ("Quest");
@@ -28,8 +29,9 @@ public class QuestSystem : MonoBehaviour {
 	public void QuestCompleted(){
 		questCounter++;
         scManager.ScoreAddiction();
-        if (questCounter >= quests.Length) {
+		if (questCounter >= quests.Length) {
 			messageText.text = "All quests completed";
+			fireManager.GetComponent<FireStart> ().StartFire ();
 			return;
 		}
 		quests [questCounter].SetActive (true);

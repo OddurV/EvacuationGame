@@ -6,17 +6,21 @@ public class FireStart : MonoBehaviour {
 	public float timeRemaining = 40f;
 	public GameObject fire;
 	public GameObject smoke;
-	public float spawnSmallFireTime = 15f;
-	public Transform [] spawnFirePoints;
+	public bool isReachingRightWall;
+	public bool isReachingLeftWall;
 
-	public GameObject respawnPrefab;
-	public GameObject respawn;
+	public Transform [] spawnFirePoints;
+	public GameObject gameManager;
+
+
+
+
+	public static int spreadDistance = 0;
 
 	// Use this for initialization
 	void Start () {
 		
 		Invoke ("StartFire", timeRemaining);
-
 	}
 	
 	// Update is called once per frame
@@ -25,19 +29,42 @@ public class FireStart : MonoBehaviour {
 	}
 		
 	//The fire starts in a random predefined spawn point
-	void StartFire () {
-		int spawnPointIndex = Random.Range (0, 5);
+	public void StartFire () {
+		gameManager.GetComponent<GameManager> ().isThereAFire = true;
+		//int spawnPointIndex = Random.Range (0, spawnFirePoints.Length);
+		int spawnPointIndex = 12;
+
 		Instantiate (fire, spawnFirePoints[spawnPointIndex].position, spawnFirePoints[spawnPointIndex].rotation);
 		Instantiate (smoke, spawnFirePoints[spawnPointIndex].position, spawnFirePoints[spawnPointIndex].rotation);
-		Invoke ("SpreadFire", 2f);
+
+		InvokeRepeating ("SpreadFire", 10f, 1f);
+
 	}
+
 
 	void SpreadFire() {
-		if (respawn == null)
-			respawn = GameObject.FindWithTag("Smoke");
+		
+		GameObject respawn;
+		Vector3 newPositionRight;
+		Vector3 newPositionLeft;
+	
 
-		Debug.Log (respawn.transform.position);
+		spreadDistance += 2;
+		//Looking for the fire spot
+		respawn = GameObject.FindGameObjectWithTag("Fire");
 
-		Instantiate(respawnPrefab, respawn.transform.position = new Vector3(0,0,2), respawn.transform.rotation);
+		//Adding smoke in each side of the first fire spot
+
+		newPositionRight = respawn.transform.position + new Vector3 (0f, 0f, spreadDistance);
+		newPositionLeft = respawn.transform.position - new Vector3 (0f, 0f, spreadDistance);
+
+		//Delimits the smoke spreading for the right wall
+		if (!isReachingRightWall)
+			Instantiate (smoke, newPositionRight, smoke.transform.rotation);
+
+		//Delimits the smoke spreading for the left wall
+		if (!isReachingLeftWall)
+			Instantiate (smoke, newPositionLeft, smoke.transform.rotation);
 	}
+
 }

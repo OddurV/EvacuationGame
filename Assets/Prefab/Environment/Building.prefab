@@ -4050,6 +4050,7 @@ GameObject:
   - 4: {fileID: 400864}
   - 136: {fileID: 13687882}
   - 114: {fileID: 11415426}
+  - 114: {fileID: 11494606}
   m_Layer: 0
   m_Name: Door15
   m_TagString: Untagged
@@ -20589,6 +20590,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb8cab7474d73f24e8485bea7488a852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scmanager: {fileID: 0}
+  timer: {fileID: 0}
+  scor: 0
+  tim: 
+  end: {fileID: 0}
+  time: {fileID: 0}
+  score: {fileID: 0}
 --- !u!114 &11429002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20696,6 +20704,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb8cab7474d73f24e8485bea7488a852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scmanager: {fileID: 0}
+  timer: {fileID: 0}
+  scor: 0
+  tim: 
+  end: {fileID: 0}
+  time: {fileID: 0}
+  score: {fileID: 0}
 --- !u!114 &11451394
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20900,6 +20915,18 @@ MonoBehaviour:
   newPosition: {x: 0, y: 0, z: 0}
   smooth: 1
   floor: 5
+--- !u!114 &11494606
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 176950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ebbc76cfaa794b6c9e46cbaa4877b67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  theNewScript: {fileID: 0}
 --- !u!135 &13532370
 SphereCollider:
   m_ObjectHideFlags: 1

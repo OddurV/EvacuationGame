@@ -31,6 +31,6 @@ public class PauseController : MonoBehaviour {
 
 	public void QuitGame()
 	{
-		Application.Quit();
-	}
+        Application.LoadLevel("Main_Menu");
+    }
 }
