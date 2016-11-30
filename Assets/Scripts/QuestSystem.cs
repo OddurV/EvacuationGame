@@ -38,20 +38,61 @@ public class QuestSystem : MonoBehaviour {
 	}
 
 	void Update(){
+		// Get the screen's center
+		Vector3 screenCenter = new Vector3(Screen.width, Screen.height, 0)/2;
 		// Set the target
 		target = quests[questCounter].transform;
 		// Get the targets position on screen into a Vector3
 		targetPos = mainCamera.WorldToScreenPoint(target.transform.position);
-
+		Debug.Log ("targetPos: "+targetPos);
 		// Check if the target is on-screen
 		if (targetPos.z > 0 &&
 		    targetPos.x > 0 && targetPos.x < Screen.width &&
 		    targetPos.y > 0 && targetPos.y < Screen.height) {
 
-			questMarker.transform.localPosition = targetPos;
-			Debug.Log (quests[questCounter]+" is on-screen");
+			questMarker.transform.localPosition = targetPos-screenCenter;
+			//Debug.Log (quests[questCounter]+" is on-screen");
 		} else {// target is off-screen
-			Debug.Log (quests[questCounter]+" is off-screen");
+			//Debug.Log (quests[questCounter]+" is off-screen");
+			if(targetPos.z<0){targetPos *= -1;} //Not sure if this is necessary in this game bacause the camera doesn't rotate
+
+			// Translating coordinates
+			// Making the origin be the center of the screen instead of the bottom left corner
+			targetPos -= screenCenter;
+
+			// find angle from center of screen to mouse position
+			float angle = Mathf.Atan2(targetPos.y, targetPos.x);
+			angle -= 90 * Mathf.Deg2Rad;
+
+			float cos = Mathf.Cos (angle);
+			float sin = -Mathf.Sin (angle);
+
+			targetPos = screenCenter + new Vector3 (sin * 150, cos * 150, 0);
+
+			// y = mx+b format
+			float m = cos / sin;
+
+			Vector3 screenBounds = screenCenter * 0.9f;
+
+			// check up and down first
+			if (cos > 0) {
+				targetPos = new Vector3 (screenBounds.y / m, screenBounds.y, 0);
+			} else {
+				//down
+				targetPos = new Vector3 (-screenBounds.y / m, -screenBounds.y, 0);
+			}
+			// if out of bounds, get point on appropriate side
+			if (targetPos.x > screenBounds.x) {//out of bounds! must be on the right
+				targetPos = new Vector3 (screenBounds.x, screenBounds.x * m, 0);
+			} else if (targetPos.x < -screenBounds.x) {//out of bounds left
+				targetPos = new Vector3 (-screenBounds.x, -screenBounds.x * m, 0);
+			}//else in bounds
+
+			// set the arrow's position and rotation
+			arrow.transform.localPosition = targetPos;
+			arrow.transform.localRotation = Quaternion.Euler (0, 0, (angle-90) * Mathf.Rad2Deg);
+			// set the quest marker's position
+			questMarker.transform.localPosition = targetPos;
 		}
 	}
 
