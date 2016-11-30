@@ -9,22 +9,22 @@ public class QuestSystem : MonoBehaviour {
 	public GameObject[] quests;
 	public int questCounter = 0;
 	public GameObject fireManager;
-	public GameObject mainCamera;
+	public Camera mainCamera;
 	private Transform target; // Target to point at
 	private Vector3 targetPos;
 	private Vector3 screenMiddle;
 
 	//Quest Icons
 	public GameObject arrow;
-	public GameObject exitSign;
+	//public GameObject exitSign;
 	public GameObject questMarker;
-	public GameObject alert;
+	/*public GameObject alert;
 	public GameObject coffee;
 	public GameObject letter;
 	public GameObject speechCoffee;
 	public GameObject speechRun;
 	public GameObject speechLetter;
-
+*/
 	void Start(){
 		quests = GameObject.FindGameObjectsWithTag ("Quest");
 		// Deactivate all quests
@@ -38,8 +38,21 @@ public class QuestSystem : MonoBehaviour {
 	}
 
 	void Update(){
+		// Set the target
+		target = quests[questCounter].transform;
 		// Get the targets position on screen into a Vector3
-		//targetPos = mainCamera.WorldToScreenPoint(target.transform.position);
+		targetPos = mainCamera.WorldToScreenPoint(target.transform.position);
+
+		// Check if the target is on-screen
+		if (targetPos.z > 0 &&
+		    targetPos.x > 0 && targetPos.x < Screen.width &&
+		    targetPos.y > 0 && targetPos.y < Screen.height) {
+
+			questMarker.transform.localPosition = targetPos;
+			Debug.Log (quests[questCounter]+" is on-screen");
+		} else {// target is off-screen
+			Debug.Log (quests[questCounter]+" is off-screen");
+		}
 	}
 
 	//Use:  QuestCompleted()
