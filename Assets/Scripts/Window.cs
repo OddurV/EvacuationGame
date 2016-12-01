@@ -15,9 +15,9 @@ public class Window : MonoBehaviour {
 		transform.Rotate(0, 0, currentValue);
 	}
 
-	void OnTriggerEnter(Collider other){
-		if (other.tag == "Player") {
-			Debug.Log ("Closed!!!!!");
+	void OnTriggerStay(Collider other){
+		if (other.tag == "Player" && Input.GetKeyDown(KeyCode.Space)) {
+			Debug.Log ("Closed a window");
             GetComponent<Collider> ().enabled = false;
 			targetValue = AngleY;
 			currentValue = 0;

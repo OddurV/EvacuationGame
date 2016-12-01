@@ -67,7 +67,7 @@ public class CameraController : MonoBehaviour {
 		float z = Mathf.Max (Mathf.Abs (zoomParamZmax), Mathf.Abs (zoomParamZmin))/5.0f;
 		float max = Mathf.Max (y, z);
 		//Debug.Log (zoomParamZmax);
-		Debug.Log ("max = " + max);
+		//Debug.Log ("max = " + max);
 		float ratio = max / zoomParameterMax;
 		if (ratio > 1.0f) {
 			ratio = 1.0f;
