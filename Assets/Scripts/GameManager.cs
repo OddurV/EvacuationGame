@@ -4,6 +4,12 @@ using UnityEngine.Audio;
 
 public class GameManager : MonoBehaviour {
 
+	// This is a class to hold various game-state variables
+
+	public bool isThereAFire = false;
+	public bool isTheAlarmOn = false;
+	public bool mute;
+
 	public AudioClip alarmSound;
 	public AudioClip Music;
 	public AudioClip buttonSound;
@@ -14,25 +20,9 @@ public class GameManager : MonoBehaviour {
 	[SerializeField]
 	private AudioMixerGroup masterMixer;
 
-
-
-	//master.volume
-
-
-	// This is a class to hold various game-state variables
-
-	public bool isThereAFire = false;
-	public bool isTheAlarmOn = false;
-	public bool mute;
-
-
-
-
 	public void muteSound ()  {
 		masterMixer.audioMixer.SetFloat ("MasterVolume", -80f);
 	}
-
-
 
 	public void unmuteSound(){
 		masterMixer.audioMixer.SetFloat ("MasterVolume", 0f);
