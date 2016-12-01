@@ -17,9 +17,11 @@ public class TriggerAI : MonoBehaviour {
 	
 	}
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
     {
-		if (other.tag == "Player" && gameManager.GetComponent<GameManager> ().isTheAlarmOn)
+		if (other.tag == "Player" 
+			&& gameManager.GetComponent<GameManager> ().isTheAlarmOn 
+			&& Input.GetKeyDown(KeyCode.Space))
         {
 			rb.isKinematic = false;
             this.GetComponent<AICharacterControl>().enabled = true;
