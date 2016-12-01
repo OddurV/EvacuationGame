@@ -8326,15 +8326,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f4d8882cbbab5648968dfc4979656f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isThereAFire: 0
+  isTheAlarmOn: 0
+  mute: 0
   alarmSound: {fileID: 8300000, guid: 7eef59be540cafe48833524093a7195b, type: 3}
   Music: {fileID: 8300000, guid: 033ebf22944785d4c8e6af12c2b90568, type: 3}
   buttonSound: {fileID: 8300000, guid: d9220b358ab3bd04ba89a6706ac8e4c2, type: 3}
   musicSource: {fileID: 1382937132}
   alarmButton: {fileID: 1382937134}
   masterMixer: {fileID: 24300001, guid: a5e2d542073599047a37342e7b642deb, type: 2}
-  isThereAFire: 0
-  isTheAlarmOn: 0
-  mute: 0
 --- !u!82 &1382937132
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8852,6 +8852,14 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11428964, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1382937131}
+    - target: {fileID: 11448822, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1382937131}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
   m_IsPrefabParent: 0

@@ -5,6 +5,7 @@ using System.Collections;
 public class LevelEnd : MonoBehaviour {
 
     public ScoreManager scmanager;
+	public GameManager gameManager;
     public Timer timer;
     public int scor;
     public string tim;
@@ -12,9 +13,9 @@ public class LevelEnd : MonoBehaviour {
     public Text time;
     public Text score;
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Player")
+		if (other.tag == "Player" && gameManager.isThereAFire)
         {
             End();
         }
