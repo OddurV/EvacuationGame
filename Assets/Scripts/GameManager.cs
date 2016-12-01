@@ -5,9 +5,10 @@ public class GameManager : MonoBehaviour {
 
 	public AudioClip alarmSound;
 	public AudioClip Music;
+	public AudioClip buttonSound;
 
 	public AudioSource musicSource;
-
+	public AudioSource alarmButton;
 
 
 	// This is a class to hold various game-state variables
@@ -19,11 +20,13 @@ public class GameManager : MonoBehaviour {
 	void Start(){
 		musicSource.clip = Music;
 		musicSource.Play ();
+		alarmButton.clip = buttonSound;
 	}
 
 
 	void Update(){
 		if (isTheAlarmOn && musicSource.clip != alarmSound) {
+			alarmButton.Play ();
 			musicSource.Stop ();
 			musicSource.clip = alarmSound;
 			musicSource.Play ();
