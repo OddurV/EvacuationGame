@@ -31,11 +31,19 @@ public class FireStart : MonoBehaviour {
 	//The fire starts in a random predefined spawn point
 	public void StartFire () {
 		gameManager.GetComponent<GameManager> ().isThereAFire = true;
+<<<<<<< HEAD
+		//int spawnPointIndex = Random.Range (0, spawnFirePoints.Length);
+		int spawnPointIndex = 12;
+
+		Instantiate (fire, spawnFirePoints[spawnPointIndex].position, spawnFirePoints[spawnPointIndex].rotation);
+		Instantiate (smoke, spawnFirePoints[spawnPointIndex].position, spawnFirePoints[spawnPointIndex].rotation);
+=======
 		int spawnPointIndex = Random.Range (0, spawnFirePoints.Length);
 		//int spawnPointIndex = 12;
 
 		Instantiate (fire, spawnFirePoints[spawnPointIndex].position, spawnFirePoints[spawnPointIndex].rotation);
 		Instantiate (smoke, spawnFirePoints[spawnPointIndex].position, smoke.transform.rotation);
+>>>>>>> Development
 
 		InvokeRepeating ("SpreadFire", 10f, 1f);
 
