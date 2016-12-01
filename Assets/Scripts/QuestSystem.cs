@@ -37,6 +37,7 @@ public class QuestSystem : MonoBehaviour {
 		messageText.text = "Go to "+quests[0];
 	}
 
+	// This update function places the quest icons on the screen
 	void Update(){
 		// Get the screen's center
 		Vector3 screenCenter = new Vector3(Screen.width, Screen.height, 0)/2;
@@ -52,6 +53,8 @@ public class QuestSystem : MonoBehaviour {
 
 			questMarker.transform.localPosition = targetPos-screenCenter;
 			//Debug.Log (quests[questCounter]+" is on-screen");
+			// Deactivate te arrow
+			arrow.SetActive(false);
 		} else {// target is off-screen
 			//Debug.Log (quests[questCounter]+" is off-screen");
 			if(targetPos.z<0){targetPos *= -1;} //Not sure if this is necessary in this game bacause the camera doesn't rotate
@@ -88,6 +91,8 @@ public class QuestSystem : MonoBehaviour {
 				targetPos = new Vector3 (-screenBounds.x, -screenBounds.x * m, 0);
 			}//else in bounds
 
+			// Activate the arrow
+			arrow.SetActive(true);
 			// set the arrow's position and rotation
 			arrow.transform.localPosition = targetPos;
 			arrow.transform.localRotation = Quaternion.Euler (0, 0, (angle-90) * Mathf.Rad2Deg);
