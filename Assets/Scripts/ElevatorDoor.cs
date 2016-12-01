@@ -27,8 +27,8 @@ public class ElevatorDoor : MonoBehaviour {
 		newPosition = position1.position;
 	}
 
-	void OnTriggerEnter (Collider other) {
-		if (other.tag == "Player") {
+	void OnTriggerStay (Collider other) {
+		if (other.tag == "Player" && Input.GetKeyDown(KeyCode.Space)) {
 			elevatorController.Summon (floor);
 		}
 	}
