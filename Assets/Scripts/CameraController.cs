@@ -14,6 +14,7 @@ public class CameraController : MonoBehaviour {
 	static private float zoomParamZmax;
 	static private Vector3 origin;
 	static private Vector3 zoomMax = new Vector3(0.9f,0.0f,0.0f); //Vector3(20.0f,0.0f,0.0f);
+	private bool zoomOut = false;
 
     // Use this for initialization
     void Start () {
@@ -31,6 +32,17 @@ public class CameraController : MonoBehaviour {
     {
 		Vector3 zoom = TrackPlayer (player.transform.position);
 		transform.position = Restrict (player.transform.position + offset + zoom);
+		if(Input.GetKeyDown(KeyCode.Z)){
+			if (zoomOut) {
+				zoomParameterMax = 0.9f;//25.0f;
+				zoomMax = new Vector3 (0.9f, 0.0f, 0.0f); //Vector3(20.0f,0.0f,0.0f);
+				zoomOut = !zoomOut;
+			} else {
+				zoomParameterMax = 25.0f;
+				zoomMax = new Vector3(20.0f,0.0f,0.0f);
+				zoomOut = !zoomOut;
+			}
+		}
     }
 
 	//Use:  offset = TrackPlayer(player.transform.position);
