@@ -48,7 +48,7 @@ public class QuestSystem : MonoBehaviour {
 		target = quests[questCounter].transform;
 		// Get the targets position on screen into a Vector3
 		targetPos = mainCamera.WorldToScreenPoint(target.transform.position);
-		Debug.Log ("targetPos: "+targetPos);
+		//Debug.Log ("targetPos: "+targetPos);
 		// Check if the target is on-screen
 		if (targetPos.z > 0 &&
 		    targetPos.x > 0 && targetPos.x < Screen.width &&

@@ -8331,8 +8331,10 @@ MonoBehaviour:
   buttonSound: {fileID: 8300000, guid: d9220b358ab3bd04ba89a6706ac8e4c2, type: 3}
   musicSource: {fileID: 1382937132}
   alarmButton: {fileID: 1382937134}
+  masterMixer: {fileID: 24300001, guid: a5e2d542073599047a37342e7b642deb, type: 2}
   isThereAFire: 0
   isTheAlarmOn: 0
+  mute: 0
 --- !u!82 &1382937132
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8341,7 +8343,8 @@ AudioSource:
   m_GameObject: {fileID: 1382937125}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300001, guid: a5e2d542073599047a37342e7b642deb,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -8415,7 +8418,8 @@ AudioSource:
   m_GameObject: {fileID: 1382937125}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300001, guid: a5e2d542073599047a37342e7b642deb,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 2e69acf3153bd844fae82b3563480647, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -8489,7 +8493,8 @@ AudioSource:
   m_GameObject: {fileID: 1382937125}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300001, guid: a5e2d542073599047a37342e7b642deb,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: d9220b358ab3bd04ba89a6706ac8e4c2, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
