@@ -13,6 +13,8 @@ public class QuestSystem : MonoBehaviour {
 	private Transform target; // Target to point at
 	private Vector3 targetPos;
 	private Vector3 screenMiddle;
+	public AudioSource questSource; 
+	//public AudioClip questPickup;
 
 	//Quest Icons
 	public GameObject arrow;
@@ -35,6 +37,7 @@ public class QuestSystem : MonoBehaviour {
 		// Activate the first quest
 		quests [0].SetActive (true);
 		messageText.text = "Go to "+quests[0];
+
 	}
 
 	// This update function places the quest icons on the screen
@@ -115,5 +118,6 @@ public class QuestSystem : MonoBehaviour {
 		}
 		quests [questCounter].SetActive (true);
 		messageText.text = "Go to "+quests[questCounter];
+		questSource.Play ();
 	}
 }
