@@ -10,7 +10,7 @@ public class ScoreManager : MonoBehaviour {
     {
     }
 
-    public void ScoreAddiction()
+    public void ScoreAddition()
     {
         score = score + 1;
         

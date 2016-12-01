@@ -10,7 +10,8 @@ public class Quest : MonoBehaviour {
         if (other.tag == "Player")
         {
     		questSystem.QuestCompleted();
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
+			this.gameObject.SetActive(false); //Makes it reuseable
         }
 	}
 }
