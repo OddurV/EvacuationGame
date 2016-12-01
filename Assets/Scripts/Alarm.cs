@@ -10,10 +10,12 @@ public class Alarm : MonoBehaviour {
 
 	private int i;
 
-	void OnTriggerEnter(Collider other){
-		if (other.tag == "Player") {
+	void OnTriggerStay(Collider other){
+		if (other.tag == "Player" && Input.GetKeyDown(KeyCode.Space)) {
 			triggered = true;
 			gameManager.GetComponent<GameManager> ().isTheAlarmOn = true;
+
+			// Disable all the alarm triggers
 			alarmBoxes = GameObject.FindGameObjectsWithTag ("Alarm");
 			for (i = 0; i < alarmBoxes.Length; i++) {
 				alarmBoxes [i].GetComponent<Collider> ().enabled = false;
