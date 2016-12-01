@@ -14,7 +14,7 @@ public class CameraController : MonoBehaviour {
 	static private float zoomParamZmax;
 	static private Vector3 origin;
 	static private Vector3 zoomMax = new Vector3(0.9f,0.0f,0.0f); //Vector3(20.0f,0.0f,0.0f);
-	private bool zoomOut = false;
+	static private bool zoomOut = false;
 
     // Use this for initialization
     void Start () {
@@ -30,8 +30,6 @@ public class CameraController : MonoBehaviour {
 	// Update is called once per frame
 	void LateUpdate ()
     {
-		Vector3 zoom = TrackPlayer (player.transform.position);
-		transform.position = Restrict (player.transform.position + offset + zoom);
 		if(Input.GetKeyDown(KeyCode.Z)){
 			if (zoomOut) {
 				zoomParameterMax = 0.9f;//25.0f;
@@ -43,6 +41,8 @@ public class CameraController : MonoBehaviour {
 				zoomOut = !zoomOut;
 			}
 		}
+		Vector3 zoom = TrackPlayer (player.transform.position);
+		transform.position = Restrict (player.transform.position, player.transform.position + offset + zoom);
     }
 
 	//Use:  offset = TrackPlayer(player.transform.position);
@@ -76,17 +76,27 @@ public class CameraController : MonoBehaviour {
 		return Vector3.Scale(zoomMax,new Vector3(ratio, ratio, ratio));
 	}
 
-	// Use: position = Restrict (pos);
-	// Pre: pos is a Vector3 object
-	// Post: pos has been restricted so that it lies within specified bounds
+	// Use: position = Restrict (player, cam);
+	// Pre: player and cam are Vector3 objects
+	// Post: cam has been restricted so that it lies within specified bounds
 	// This function makes sure that the camera is always looking at the building
-	static private Vector3 Restrict (Vector3 pos){
+	static private Vector3 Restrict (Vector3 player, Vector3 cam){
 		//Running the game and moving the player gets 
 		//the following desired values of the camera's position
-		//if x=5.75 then y=3.05
-		//if x=26 then y=23
-		//simplify to x=y+3
-		if(pos.y < pos.x-3) {pos.y = pos.x-3;}
-		return pos;
+		if (zoomOut) {
+			//When zoom is allowed
+			//if x=5.75 then y=3.05
+			//if x=26 then y=23
+			//simplify to x=y+3
+			if (cam.y < cam.x - 3f && zoomOut) {
+				cam.y = cam.x - 3f;
+			}
+		} else {//zoom is not allowed
+			if (player.x>0.3f || player.x<-3.5f){
+				if(cam.x>5.3f){cam.x = 5.3f;}
+				if(cam.x<1.0f){cam.x = 1.0f;}
+			}
+		}
+		return cam;
 	}
 }
