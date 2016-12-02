@@ -5,9 +5,11 @@ using System.Collections;
 public class PlayerHealth : MonoBehaviour {
 
     public Text healthText;
+	public Text reason;
     public int startingHealth;
     public int currentHealth;
     public bool harmed = false;
+	public LevelEndFail levelEndFail;
     
     // Use this for initialization
     void Start () {
@@ -34,7 +36,8 @@ public class PlayerHealth : MonoBehaviour {
             currentHealth = currentHealth - 1;
             healthText.text = "Health: " + currentHealth;
             if (currentHealth == 0 ){
-                Application.LoadLevel(Application.loadedLevel);
+				reason.text = " You breathed so much smoke. But you recovered and you can retry. ";
+				levelEndFail.Fail ();
             }
         }
     }
