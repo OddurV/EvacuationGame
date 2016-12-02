@@ -6,6 +6,8 @@ public class LevelEnd : MonoBehaviour {
 
     public ScoreManager scmanager;
 	public GameManager gameManager;
+	public LevelEndFail levelEndFail;
+	public Text reason;
     public Timer timer;
     public int scor;
     public string tim;
@@ -15,10 +17,13 @@ public class LevelEnd : MonoBehaviour {
 
     void OnTriggerStay(Collider other)
     {
-		if (other.tag == "Player" && gameManager.isThereAFire)
+		if (other.tag == "Player" && gameManager.isThereAFire && gameManager.isTheAlarmOn)
         {
             End();
-        }
+		}else if (other.tag == "Player" && gameManager.isThereAFire && !gameManager.isTheAlarmOn){
+			reason.text = " You forgot the alarm. But you can retry. ";
+			levelEndFail.Fail ();
+		}
     }
 
     public void End()

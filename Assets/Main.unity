@@ -8987,6 +8987,22 @@ Prefab:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1382937131}
+    - target: {fileID: 11428964, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: levelEndFail
+      value: 
+      objectReference: {fileID: 1382937135}
+    - target: {fileID: 11428964, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: reason
+      value: 
+      objectReference: {fileID: 848518909}
+    - target: {fileID: 11448822, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: levelEndFail
+      value: 
+      objectReference: {fileID: 1382937135}
+    - target: {fileID: 11448822, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: reason
+      value: 
+      objectReference: {fileID: 848518909}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
   m_IsPrefabParent: 0
