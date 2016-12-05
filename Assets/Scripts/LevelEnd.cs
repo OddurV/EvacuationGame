@@ -21,7 +21,7 @@ public class LevelEnd : MonoBehaviour {
         {
             End();
 		}else if (other.tag == "Player" && gameManager.isThereAFire && !gameManager.isTheAlarmOn){
-			reason.text = " You forgot the alarm. But you can retry. ";
+			reason.text = "Hey, what happened to the alarm?";
 			levelEndFail.Fail ();
 		}
     }

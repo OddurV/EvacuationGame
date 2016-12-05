@@ -36,7 +36,7 @@ public class PlayerHealth : MonoBehaviour {
             currentHealth = currentHealth - 1;
             healthText.text = "Health: " + currentHealth;
             if (currentHealth == 0 ){
-				reason.text = " You breathed so much smoke. But you recovered and you can retry. ";
+				reason.text = "Smoking can harm you and the others around you.";
 				levelEndFail.Fail ();
             }
         }
