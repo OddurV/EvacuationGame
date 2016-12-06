@@ -35,6 +35,13 @@ public class PlayerHealth : MonoBehaviour {
 		}
 	}
 
+	void OnTriggerEnter(Collider other){
+		if (other.tag == "Fire") {
+			reason.text = "Stay away from the fire!";
+			levelEndFail.Fail ();
+		}
+	}
+
     /*void OnTriggerExit(Collider other)
     {
         if (other.tag == "Smoke"){
