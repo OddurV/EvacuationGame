@@ -38,10 +38,10 @@ public class GameManager : MonoBehaviour {
 
 
 		if (mute) {
-			Debug.Log ("unmute");
+			//Debug.Log ("unmute");
 			unmuteSound ();
 		} else {
-			Debug.Log ("mute");
+			//Debug.Log ("mute");
 			muteSound ();
 		}
 		mute = !mute;
