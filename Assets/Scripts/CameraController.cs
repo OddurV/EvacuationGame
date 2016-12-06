@@ -92,10 +92,14 @@ public class CameraController : MonoBehaviour {
 				cam.y = cam.x - 3f;
 			}
 		} else {//zoom is not allowed
-			if (player.x>0.3f || player.x<-3.5f){
-				if(cam.x>5.3f){cam.x = 5.3f;}
-				if(cam.x<1.0f){cam.x = 1.0f;}
-			}
+				if (cam.x > 5.3f) {
+					cam.x = 5.3f;
+					//Debug.Log ("Camera x="+cam.x+" Restricting camera to x=5.3");
+				}
+				if (cam.x < 1.0f) {
+					cam.x = 1.0f;
+					//Debug.Log ("Camera x="+cam.x+" Restricting camera to x=1.0");
+				}
 		}
 		return cam;
 	}
