@@ -18,9 +18,10 @@ public class Door : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other)
 	{
-		targetValue = AngleY;
-		//currentValue = 0;
-	}
+       
+            targetValue = AngleY;
+        //currentValue = 0;
+    }
 
 	void OnTriggerStay(Collider other)
 	{
