@@ -17,8 +17,7 @@ public class Window : MonoBehaviour {
 
 	void OnTriggerStay(Collider other){
 		if (other.tag == "Player" && Input.GetKeyDown(KeyCode.Space)) {
-			Debug.Log ("Closed a window");
-            GetComponent<Collider> ().enabled = false;
+			GetComponent<Collider> ().enabled = false;
 			targetValue = AngleY;
 			currentValue = 0;
 		}
