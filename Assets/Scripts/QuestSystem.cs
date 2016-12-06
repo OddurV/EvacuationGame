@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.Linq;
 
 public class QuestSystem : MonoBehaviour {
 
@@ -15,6 +16,7 @@ public class QuestSystem : MonoBehaviour {
 	private Vector3 screenMiddle;
 	public AudioSource questSource; 
 	//public AudioClip questPickup;
+	private bool finished = false;
 
 	//Quest Icons
 	public GameObject arrow;
@@ -28,7 +30,7 @@ public class QuestSystem : MonoBehaviour {
 	public GameObject speechLetter;
 */
 	void Start(){
-		quests = GameObject.FindGameObjectsWithTag ("Quest");
+		quests = GameObject.FindGameObjectsWithTag ("Quest").OrderBy( go => go.name ).ToArray();
 		// Deactivate all quests
 		for (int i = 0; i < quests.Length; i++) {
 			//Debug.Log ("Quest Number " + i + " is named" + quests [i].name);
@@ -42,6 +44,16 @@ public class QuestSystem : MonoBehaviour {
 
 	// This update function places the quest icons on the screen
 	void Update(){
+		if (finished) {
+			return;
+		}
+		if(questCounter >= quests.Length){
+			finished = true;
+			arrow.SetActive (false);
+			questMarker.SetActive (false);
+			return;
+		}
+
 		// Get the screen's center
 		Vector3 screenCenter = new Vector3(Screen.width, Screen.height, 0)/2;
 		// Set the target
@@ -109,6 +121,7 @@ public class QuestSystem : MonoBehaviour {
 	//		quests is an array of quest gameObjects
 	//Post: The next quest has been activated
 	public void QuestCompleted(){
+		Debug.Log ("Quest completed!");
 		questCounter++;
         scManager.ScoreAddition();
 		if (questCounter >= quests.Length) {
