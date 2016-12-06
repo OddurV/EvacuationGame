@@ -9,6 +9,9 @@ TagManager:
   - ExitDoor
   - AIrunning
   - Fire
+  - Smoke
+  - RightSmokeContainer
+  - NPC
   layers:
   - Default
   - TransparentFX
