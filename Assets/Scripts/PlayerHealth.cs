@@ -10,6 +10,7 @@ public class PlayerHealth : MonoBehaviour {
     public int currentHealth;
     public bool harmed = false;
 	public LevelEndFail levelEndFail;
+	public float smokeCounter = 0;
     
     // Use this for initialization
     void Start () {
@@ -17,19 +18,29 @@ public class PlayerHealth : MonoBehaviour {
         healthText.text = "Health: " + currentHealth;
 	}
 
-    void OnTriggerEnter(Collider other){
+    /*void OnTriggerEnter(Collider other){
         if (other.tag == "Smoke"){
         harmed = true;
             InvokeRepeating("Damage", 1.0f, 1.0f);
         }
-    }
+    }*/
 
-    void OnTriggerExit(Collider other)
+	void OnTriggerStay (Collider other){
+		if (other.tag == "Smoke") {
+			smokeCounter += Time.deltaTime;
+		}
+		if (smokeCounter > 20) {// You have spent a minute in smoke
+			reason.text = "You inhaled too much smoke";
+			levelEndFail.Fail ();
+		}
+	}
+
+    /*void OnTriggerExit(Collider other)
     {
         if (other.tag == "Smoke"){
         harmed = false;
         }
-    }
+    }*/
 
     public void Damage(){
         if (harmed) {

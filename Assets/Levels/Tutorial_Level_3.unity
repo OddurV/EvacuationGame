@@ -7569,10 +7569,10 @@ GameObject:
   - 114: {fileID: 1382937129}
   - 114: {fileID: 1382937130}
   - 114: {fileID: 1382937131}
+  - 114: {fileID: 1382937135}
   - 82: {fileID: 1382937132}
   - 82: {fileID: 1382937133}
   - 82: {fileID: 1382937134}
-  - 114: {fileID: 1382937135}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
