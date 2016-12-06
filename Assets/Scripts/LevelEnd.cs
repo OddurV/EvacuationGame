@@ -44,8 +44,18 @@ public class LevelEnd : MonoBehaviour {
         Application.LoadLevel("Main_Menu");
     }
 
-    public void NextLevel()
+    public void Tutorial2()
     {
-        Application.LoadLevel("Main_Menu");
+        Application.LoadLevel("Tutorial_Level_2");
     }
+
+	public void Tutorial3()
+	{
+		Application.LoadLevel("Tutorial_Level_3");
+	}
+
+	public void Level5()
+	{
+		Application.LoadLevel("Main");
+	}
 }
