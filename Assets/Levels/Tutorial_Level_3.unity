@@ -7666,7 +7666,7 @@ MonoBehaviour:
   isTheAlarmOn: 0
   mute: 0
   alarmSound: {fileID: 8300000, guid: 7eef59be540cafe48833524093a7195b, type: 3}
-  Music: {fileID: 8300000, guid: 033ebf22944785d4c8e6af12c2b90568, type: 3}
+  Music: {fileID: 8300000, guid: aa8750001e5bbf64a8a8a94257de3989, type: 3}
   buttonSound: {fileID: 8300000, guid: d9220b358ab3bd04ba89a6706ac8e4c2, type: 3}
   musicSource: {fileID: 1382937132}
   alarmButton: {fileID: 1382937134}

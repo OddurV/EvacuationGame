@@ -11339,7 +11339,7 @@ MonoBehaviour:
   isTheAlarmOn: 0
   mute: 0
   alarmSound: {fileID: 8300000, guid: 7eef59be540cafe48833524093a7195b, type: 3}
-  Music: {fileID: 8300000, guid: 033ebf22944785d4c8e6af12c2b90568, type: 3}
+  Music: {fileID: 8300000, guid: aa8750001e5bbf64a8a8a94257de3989, type: 3}
   buttonSound: {fileID: 8300000, guid: d9220b358ab3bd04ba89a6706ac8e4c2, type: 3}
   musicSource: {fileID: 1382937132}
   alarmButton: {fileID: 1382937134}
@@ -11407,7 +11407,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -11482,7 +11482,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -11557,7 +11557,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -12231,7 +12231,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1482611649}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: 25, z: -17.5}
+  m_LocalPosition: {x: -1, y: 200, z: -17.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
