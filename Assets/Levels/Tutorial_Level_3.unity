@@ -9019,6 +9019,10 @@ Prefab:
       propertyPath: m_Color.a
       value: 0.397
       objectReference: {fileID: 0}
+    - target: {fileID: 11437670, guid: 252085b093bae7d48b5df3bd5032da53, type: 2}
+      propertyPath: m_Text
+      value: Congratulations! You Won!
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 252085b093bae7d48b5df3bd5032da53, type: 2}
   m_IsPrefabParent: 0
