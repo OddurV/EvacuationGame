@@ -24,9 +24,6 @@ public class LevelEnd : MonoBehaviour {
         GameObject oneStar = GameObject.FindGameObjectWithTag("1Star");
         GameObject twoStars = GameObject.FindGameObjectWithTag("2Stars");
         GameObject threeStars = GameObject.FindGameObjectWithTag("3Stars");
-        //oneStar.SetActive(false);
-        //twoStars.SetActive(false);
-        //threeStars.SetActive(false);
     }
 
     void OnTriggerStay(Collider other)
