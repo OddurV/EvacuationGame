@@ -6382,6 +6382,7 @@ GameObject:
   - 23: {fileID: 678967929}
   - 114: {fileID: 678967928}
   - 114: {fileID: 678967932}
+  - 114: {fileID: 678967933}
   m_Layer: 10
   m_Name: Quest E
   m_TagString: Quest
@@ -6474,6 +6475,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1382937125}
+--- !u!114 &678967933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 678967926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad3748b516322954d9a987fd6564cd58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireManager: {fileID: 1724205984}
 --- !u!1 &686112543
 GameObject:
   m_ObjectHideFlags: 0
@@ -13360,7 +13373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82811a3d5aa99004a95c88760494bf1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 10
+  timeRemaining: 100
   fire: {fileID: 100000, guid: e1e6a88ec533ebd4bb02cc28a77b8ab4, type: 2}
   smoke: {fileID: 176312, guid: d6b9105c4533f4db990f628a3b6e2e96, type: 2}
   isReachingRightWall: 0
