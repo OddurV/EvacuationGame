@@ -11476,9 +11476,9 @@ MonoBehaviour:
   isThereAFire: 0
   isTheAlarmOn: 0
   mute: 0
-  alarmSound: {fileID: 8300000, guid: 7eef59be540cafe48833524093a7195b, type: 3}
-  Music: {fileID: 8300000, guid: aa8750001e5bbf64a8a8a94257de3989, type: 3}
-  buttonSound: {fileID: 8300000, guid: d9220b358ab3bd04ba89a6706ac8e4c2, type: 3}
+  alarmSound: {fileID: 8300000, guid: 8f6e1ae5f3d86654b9d2a4bd9ed57e03, type: 3}
+  Music: {fileID: 8300000, guid: d8c00d179ed654f41a0a43585c1d5e98, type: 3}
+  buttonSound: {fileID: 8300000, guid: f749de2ef491ba049926778562a7631a, type: 3}
   musicSource: {fileID: 1382937132}
   alarmButton: {fileID: 1382937134}
   masterMixer: {fileID: 24300001, guid: a5e2d542073599047a37342e7b642deb, type: 2}
@@ -11567,7 +11567,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300001, guid: a5e2d542073599047a37342e7b642deb,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 2e69acf3153bd844fae82b3563480647, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5a9b7dce09e9f744ea92f1702655d74d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
