@@ -31,9 +31,13 @@ public class LevelEnd : MonoBehaviour {
 		if (other.tag == "Player" && gameManager.isThereAFire && gameManager.isTheAlarmOn)
         {
             End();
+			// This is to stop the alarm noise and get the music playing again
+			gameManager.GetComponent<GameManager> ().isTheAlarmOn = false;
 		}else if (other.tag == "Player" && gameManager.isThereAFire && !gameManager.isTheAlarmOn){
 			reason.text = "Hey, what happened to the alarm?";
 			levelEndFail.Fail ();
+			// This is to stop the alarm noise and get the music playing again
+			gameManager.GetComponent<GameManager> ().isTheAlarmOn = false;
 		}
     }
 
