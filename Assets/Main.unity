@@ -9904,6 +9904,14 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: 31.39
       objectReference: {fileID: 0}
+    - target: {fileID: 11497550, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1382937131}
+    - target: {fileID: 11481912, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1382937131}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
   m_IsPrefabParent: 0
