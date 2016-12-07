@@ -21,6 +21,7 @@ public class FireStart : MonoBehaviour {
 	void Start () {
 		
 		Invoke ("StartFire", timeRemaining);
+		smoke = Instantiate (Resources.Load ("Smoke", typeof(GameObject))) as GameObject;
 	}
 	
 	// Update is called once per frame
@@ -30,6 +31,7 @@ public class FireStart : MonoBehaviour {
 		
 	//The fire starts in a random predefined spawn point
 	public void StartFire () {
+		spreadDistance = 0;
 		gameManager.GetComponent<GameManager> ().isThereAFire = true;
 		int spawnPointIndex = Random.Range (0, spawnFirePoints.Length);
 		//int spawnPointIndex = 12;
