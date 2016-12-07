@@ -30,7 +30,7 @@ public class CameraController : MonoBehaviour {
 	// Update is called once per frame
 	void LateUpdate ()
     {
-		if(Input.GetKeyDown(KeyCode.Z)){
+		if(false){//Zoom button deactivated// Input.GetKeyDown(KeyCode.Z)){
 			if (zoomOut) {
 				zoomParameterMax = 0.9f;//25.0f;
 				zoomMax = new Vector3 (0.9f, 0.0f, 0.0f); //Vector3(20.0f,0.0f,0.0f);
