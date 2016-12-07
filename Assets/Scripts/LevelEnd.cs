@@ -13,7 +13,21 @@ public class LevelEnd : MonoBehaviour {
     public string tim;
     public Transform end;
     public Text time;
-    public Text score;
+    public GameObject oneStar;
+    public GameObject twoStars;
+    public GameObject threeStars;
+    
+    GameObject gos;
+
+    void Start()
+    {
+        GameObject oneStar = GameObject.FindGameObjectWithTag("1Star");
+        GameObject twoStars = GameObject.FindGameObjectWithTag("2Stars");
+        GameObject threeStars = GameObject.FindGameObjectWithTag("3Stars");
+        //oneStar.SetActive(false);
+        //twoStars.SetActive(false);
+        //threeStars.SetActive(false);
+    }
 
     void OnTriggerStay(Collider other)
     {
@@ -34,8 +48,20 @@ public class LevelEnd : MonoBehaviour {
             Time.timeScale = 0;
             scor = scmanager.score;
             tim = timer.finalTime;
-            score.text = "Score : " + scor;
+            //score.text = "Score : " + scor;
             time.text = "Time : " + tim;
+            if (scor == 1)
+            {
+                oneStar.SetActive(true);
+            }
+            if (scor == 2)
+            {
+                twoStars.SetActive(true);
+            }
+            if (scor == 3)
+            {
+                threeStars.SetActive(true);
+            }
         }
     }
 

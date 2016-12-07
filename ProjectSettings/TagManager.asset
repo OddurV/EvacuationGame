@@ -12,6 +12,9 @@ TagManager:
   - Smoke
   - RightSmokeContainer
   - NPC
+  - 1Star
+  - 2Stars
+  - 3Stars
   layers:
   - Default
   - TransparentFX
