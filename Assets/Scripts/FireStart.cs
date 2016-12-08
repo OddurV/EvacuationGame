@@ -13,6 +13,7 @@ public class FireStart : MonoBehaviour {
 	public GameObject gameManager;
 
 	public float smokeDelay = 0f;
+	public float smokeRepeatDelay = 0.5f;
 
 
 	public static int spreadDistance = 0;
@@ -39,7 +40,7 @@ public class FireStart : MonoBehaviour {
 		Instantiate (fire, spawnFirePoints[spawnPointIndex].position, spawnFirePoints[spawnPointIndex].rotation);
 		Instantiate (smoke, spawnFirePoints[spawnPointIndex].position, smoke.transform.rotation);
 
-		InvokeRepeating ("SpreadFire", smokeDelay, 0.5f);
+		InvokeRepeating ("SpreadFire", smokeDelay, smokeRepeatDelay);
 
 	}
 
@@ -51,7 +52,7 @@ public class FireStart : MonoBehaviour {
 		Vector3 newPositionLeft;
 	
 
-		spreadDistance += 2;
+		spreadDistance += 4;
 		//Looking for the fire spot
 		respawn = GameObject.FindGameObjectWithTag("Fire");
 

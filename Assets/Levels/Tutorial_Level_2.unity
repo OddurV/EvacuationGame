@@ -4478,6 +4478,10 @@ Prefab:
       propertyPath: reason
       value: 
       objectReference: {fileID: 848518909}
+    - target: {fileID: 11496888, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 2}
+      propertyPath: healthTimer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 2}
   m_IsPrefabParent: 0
@@ -7138,6 +7142,12 @@ MonoBehaviour:
   door4: {fileID: 0}
   door5: {fileID: 0}
   gameManager: {fileID: 1382937125}
+  elevatorSound: {fileID: 0}
+  elevatorButtonSound: {fileID: 0}
+  elevatorDoorSound: {fileID: 0}
+  elevatorSoundSource: {fileID: 0}
+  elevatorButtonSoundSource: {fileID: 0}
+  elevatorDoorSoundSource: {fileID: 0}
 --- !u!65 &1288118191
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9577,6 +9587,8 @@ MonoBehaviour:
   spawnFirePoints:
   - {fileID: 1482611650}
   gameManager: {fileID: 1382937125}
+  smokeDelay: 1
+  smokeRepeatDelay: 3
 --- !u!1 &1728942241
 GameObject:
   m_ObjectHideFlags: 0

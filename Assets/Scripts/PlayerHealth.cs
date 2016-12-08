@@ -11,6 +11,7 @@ public class PlayerHealth : MonoBehaviour {
     public bool harmed = false;
 	public LevelEndFail levelEndFail;
 	public float smokeCounter = 0;
+	public float healthTimer = 5;
     
     // Use this for initialization
     void Start () {
@@ -29,7 +30,7 @@ public class PlayerHealth : MonoBehaviour {
 		if (other.tag == "Smoke") {
 			smokeCounter += Time.deltaTime;
 		}
-		if (smokeCounter > 5) {// You have spent a minute in smoke
+		if (smokeCounter > healthTimer) {// You have spent too long in smoke
 			reason.text = "You inhaled too much smoke";
 			levelEndFail.Fail ();
 		}

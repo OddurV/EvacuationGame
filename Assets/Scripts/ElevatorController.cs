@@ -66,22 +66,40 @@ public class ElevatorController : MonoBehaviour {
 
 			switch (targetFloor) {
 			case 5:
-				door5.GetComponent<ElevatorDoor>().OpenDoor ();
+				door5.GetComponent<ElevatorDoor> ().OpenDoor ();
+				if (!door5.GetComponent<ElevatorDoor> ().openSoundPlayed) {
+					elevatorDoorSoundSource.Play();
+				}
 				break;
 			case 4:
 				door4.GetComponent<ElevatorDoor>().OpenDoor ();
+				if (!door5.GetComponent<ElevatorDoor> ().openSoundPlayed) {
+					elevatorDoorSoundSource.Play();
+				}
 				break;
 			case 3:
 				door3.GetComponent<ElevatorDoor>().OpenDoor ();
+				if (!door5.GetComponent<ElevatorDoor> ().openSoundPlayed) {
+					elevatorDoorSoundSource.Play();
+				}
 				break;
 			case 2:
 				door2.GetComponent<ElevatorDoor>().OpenDoor ();
+				if (!door5.GetComponent<ElevatorDoor> ().openSoundPlayed) {
+					elevatorDoorSoundSource.Play();
+				}
 				break;
 			case 1:
 				door1.GetComponent<ElevatorDoor>().OpenDoor ();
+				if (!door5.GetComponent<ElevatorDoor> ().openSoundPlayed) {
+					elevatorDoorSoundSource.Play();
+				}
 				break;
 			default:
 				door1.GetComponent<ElevatorDoor>().OpenDoor ();
+				if (!door5.GetComponent<ElevatorDoor> ().openSoundPlayed) {
+					elevatorDoorSoundSource.Play();
+				}
 				break;
 			}
 		}
@@ -140,7 +158,7 @@ public class ElevatorController : MonoBehaviour {
 	// Summon the elevator to a specific floor
 	public void Summon(int floor){
 		// Play the elevator button sound
-		//elevatorButtonSoundSource.Play();
+		elevatorButtonSoundSource.Play();
 
 		if (gameManager.GetComponent<GameManager> ().isThereAFire) {return;}
 		switch (floor) {

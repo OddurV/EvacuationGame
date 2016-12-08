@@ -8386,9 +8386,9 @@ MonoBehaviour:
   door4: {fileID: 1799396162}
   door5: {fileID: 1544525130}
   gameManager: {fileID: 1382937125}
-  elevatorSound: {fileID: 8300000, guid: 42e65e088b3f4374e851b8dbd38f3df9, type: 3}
+  elevatorSound: {fileID: 8300000, guid: 88777781cec29ec43a4316aa79f80f56, type: 3}
   elevatorButtonSound: {fileID: 8300000, guid: f749de2ef491ba049926778562a7631a, type: 3}
-  elevatorDoorSound: {fileID: 8300000, guid: 5a9b7dce09e9f744ea92f1702655d74d, type: 3}
+  elevatorDoorSound: {fileID: 8300000, guid: f5911460fe8a91b4a871b4ec63534703, type: 3}
   elevatorSoundSource: {fileID: 1288118194}
   elevatorButtonSoundSource: {fileID: 1288118193}
   elevatorDoorSoundSource: {fileID: 1288118192}
