@@ -18,13 +18,16 @@ public class Door : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other)
 	{
-		targetValue = AngleY;
-		currentValue = 0;
-	}
+       
+            targetValue = AngleY;
+        //currentValue = 0;
+    }
 
-	void OnTriggerExit(Collider other)
+	void OnTriggerStay(Collider other)
 	{
-		currentValue = AngleY;
-		targetValue = 0;
+		if (other.tag == "Player" && Input.GetKeyDown (KeyCode.Space)) {
+			//currentValue = AngleY;
+			targetValue = 0;
+		}
 	}
 }

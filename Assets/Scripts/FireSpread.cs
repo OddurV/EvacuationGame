@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class FireSpread : MonoBehaviour {
@@ -19,7 +19,7 @@ public class FireSpread : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Fire")
+        if (other.tag == "Flammable")
         {
             //InvokeRepeating("Damage", 1.0f, 1.0f);
         }

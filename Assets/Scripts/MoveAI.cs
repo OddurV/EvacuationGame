@@ -4,7 +4,9 @@ using UnityStandardAssets.Characters.ThirdPerson;
 
 public class MoveAI : MonoBehaviour {
 
+	public GameObject gameManager;
 	public Alarm [] alarm;
+	public Rigidbody rb;
 	private int i ;
 
 
@@ -16,10 +18,9 @@ public class MoveAI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		for (i = 0; i < alarm.Length; i++) {
-			if (alarm[i].triggered == true) {
-				this.GetComponent<AICharacterControl>().enabled = true;
-			}
+		if (gameManager.GetComponent<GameManager> ().isTheAlarmOn) {
+			rb.isKinematic = false;
+			this.GetComponent<AICharacterControl>().enabled = true;
 		}
 	}
 }
