@@ -66,40 +66,40 @@ public class ElevatorController : MonoBehaviour {
 
 			switch (targetFloor) {
 			case 5:
-				door5.GetComponent<ElevatorDoor> ().OpenDoor ();
 				if (!door5.GetComponent<ElevatorDoor> ().openSoundPlayed) {
 					elevatorDoorSoundSource.Play();
 				}
+				door5.GetComponent<ElevatorDoor> ().OpenDoor ();
 				break;
 			case 4:
-				door4.GetComponent<ElevatorDoor>().OpenDoor ();
 				if (!door5.GetComponent<ElevatorDoor> ().openSoundPlayed) {
 					elevatorDoorSoundSource.Play();
 				}
+				door4.GetComponent<ElevatorDoor>().OpenDoor ();
 				break;
 			case 3:
-				door3.GetComponent<ElevatorDoor>().OpenDoor ();
 				if (!door5.GetComponent<ElevatorDoor> ().openSoundPlayed) {
 					elevatorDoorSoundSource.Play();
 				}
+				door3.GetComponent<ElevatorDoor>().OpenDoor ();
 				break;
 			case 2:
-				door2.GetComponent<ElevatorDoor>().OpenDoor ();
 				if (!door5.GetComponent<ElevatorDoor> ().openSoundPlayed) {
 					elevatorDoorSoundSource.Play();
 				}
+				door2.GetComponent<ElevatorDoor>().OpenDoor ();
 				break;
 			case 1:
-				door1.GetComponent<ElevatorDoor>().OpenDoor ();
 				if (!door5.GetComponent<ElevatorDoor> ().openSoundPlayed) {
 					elevatorDoorSoundSource.Play();
 				}
+				door1.GetComponent<ElevatorDoor>().OpenDoor ();
 				break;
 			default:
-				door1.GetComponent<ElevatorDoor>().OpenDoor ();
 				if (!door5.GetComponent<ElevatorDoor> ().openSoundPlayed) {
 					elevatorDoorSoundSource.Play();
 				}
+				door1.GetComponent<ElevatorDoor>().OpenDoor ();
 				break;
 			}
 		}
