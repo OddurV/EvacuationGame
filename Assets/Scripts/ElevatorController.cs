@@ -30,6 +30,7 @@ public class ElevatorController : MonoBehaviour {
 	public AudioSource elevatorSoundSource;
 	public AudioSource elevatorButtonSoundSource;
 	public AudioSource elevatorDoorSoundSource;
+	private bool isNotMoving = true;
 
 
 	// Use this for initialization
@@ -54,13 +55,17 @@ public class ElevatorController : MonoBehaviour {
 		if (gameManager.GetComponent<GameManager> ().isThereAFire && !playerIsInElevator) {return;}
 
 		// Play the elevator movement sound
-		//elevatorSoundSource.Play();
+		if (!isNotMoving) {
+			elevatorSoundSource.Play ();
+		}
+		isNotMoving = true;
 
 		// Open the door where the elevator is
 		if (Mathf.Abs (elevator.position.y - newPosition.y) <= 0.3) {
 
 			// Stop the elevator movement sound
-			//elevatorSoundSource.Stop();
+			elevatorSoundSource.Stop();
+			isNotMoving = false;
 			// Play the door opening sound
 			//elevatorDoorSoundSource.Play();
 
@@ -72,31 +77,31 @@ public class ElevatorController : MonoBehaviour {
 				door5.GetComponent<ElevatorDoor> ().OpenDoor ();
 				break;
 			case 4:
-				if (!door5.GetComponent<ElevatorDoor> ().openSoundPlayed) {
+				if (!door4.GetComponent<ElevatorDoor> ().openSoundPlayed) {
 					elevatorDoorSoundSource.Play();
 				}
 				door4.GetComponent<ElevatorDoor>().OpenDoor ();
 				break;
 			case 3:
-				if (!door5.GetComponent<ElevatorDoor> ().openSoundPlayed) {
+				if (!door3.GetComponent<ElevatorDoor> ().openSoundPlayed) {
 					elevatorDoorSoundSource.Play();
 				}
 				door3.GetComponent<ElevatorDoor>().OpenDoor ();
 				break;
 			case 2:
-				if (!door5.GetComponent<ElevatorDoor> ().openSoundPlayed) {
+				if (!door2.GetComponent<ElevatorDoor> ().openSoundPlayed) {
 					elevatorDoorSoundSource.Play();
 				}
 				door2.GetComponent<ElevatorDoor>().OpenDoor ();
 				break;
 			case 1:
-				if (!door5.GetComponent<ElevatorDoor> ().openSoundPlayed) {
+				if (!door1.GetComponent<ElevatorDoor> ().openSoundPlayed) {
 					elevatorDoorSoundSource.Play();
 				}
 				door1.GetComponent<ElevatorDoor>().OpenDoor ();
 				break;
 			default:
-				if (!door5.GetComponent<ElevatorDoor> ().openSoundPlayed) {
+				if (!door1.GetComponent<ElevatorDoor> ().openSoundPlayed) {
 					elevatorDoorSoundSource.Play();
 				}
 				door1.GetComponent<ElevatorDoor>().OpenDoor ();
