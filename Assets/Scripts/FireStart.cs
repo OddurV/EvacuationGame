@@ -12,7 +12,7 @@ public class FireStart : MonoBehaviour {
 	public Transform [] spawnFirePoints;
 	public GameObject gameManager;
 
-
+	public float smokeDelay = 0f;
 
 
 	public static int spreadDistance = 0;
@@ -21,7 +21,7 @@ public class FireStart : MonoBehaviour {
 	void Start () {
 		
 		Invoke ("StartFire", timeRemaining);
-		smoke = Instantiate (Resources.Load ("Smoke", typeof(GameObject))) as GameObject;
+		//smoke = Instantiate (Resources.Load ("Smoke", typeof(GameObject))) as GameObject;
 	}
 	
 	// Update is called once per frame
@@ -39,7 +39,7 @@ public class FireStart : MonoBehaviour {
 		Instantiate (fire, spawnFirePoints[spawnPointIndex].position, spawnFirePoints[spawnPointIndex].rotation);
 		Instantiate (smoke, spawnFirePoints[spawnPointIndex].position, smoke.transform.rotation);
 
-		InvokeRepeating ("SpreadFire", 0f, 0.5f);
+		InvokeRepeating ("SpreadFire", smokeDelay, 0.5f);
 
 	}
 

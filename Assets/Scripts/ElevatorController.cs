@@ -24,21 +24,46 @@ public class ElevatorController : MonoBehaviour {
 
 	public GameObject gameManager;
 
+	public AudioClip elevatorSound;
+	public AudioClip elevatorButtonSound;
+	public AudioClip elevatorDoorSound;
+	public AudioSource elevatorSoundSource;
+	public AudioSource elevatorButtonSoundSource;
+	public AudioSource elevatorDoorSoundSource;
+
+
 	// Use this for initialization
 	void Start () {
 		// Make sure the elevator starts on the first floor
 		Summon(1);
+		// Set up the audio
+		elevatorSoundSource.clip = elevatorSound;
+		elevatorButtonSoundSource.clip = elevatorButtonSound;
+		elevatorDoorSoundSource.clip = elevatorDoorSound;
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
 		// Move the elevator
 		elevator.position = Vector3.Lerp (elevator.position, newPosition, smooth * Time.deltaTime);
+
 		// Close all the elevator doors
 		CloseAll ();
+
+		// Deactivate the elevator during a fire
 		if (gameManager.GetComponent<GameManager> ().isThereAFire && !playerIsInElevator) {return;}
+
+		// Play the elevator movement sound
+		//elevatorSoundSource.Play();
+
 		// Open the door where the elevator is
 		if (Mathf.Abs (elevator.position.y - newPosition.y) <= 0.3) {
+
+			// Stop the elevator movement sound
+			//elevatorSoundSource.Stop();
+			// Play the door opening sound
+			//elevatorDoorSoundSource.Play();
+
 			switch (targetFloor) {
 			case 5:
 				door5.GetComponent<ElevatorDoor>().OpenDoor ();
@@ -114,6 +139,9 @@ public class ElevatorController : MonoBehaviour {
 
 	// Summon the elevator to a specific floor
 	public void Summon(int floor){
+		// Play the elevator button sound
+		//elevatorButtonSoundSource.Play();
+
 		if (gameManager.GetComponent<GameManager> ().isThereAFire) {return;}
 		switch (floor) {
 		case 5:
