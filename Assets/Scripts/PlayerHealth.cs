@@ -29,7 +29,7 @@ public class PlayerHealth : MonoBehaviour {
 		if (other.tag == "Smoke") {
 			smokeCounter += Time.deltaTime;
 		}
-		if (smokeCounter > 20) {// You have spent a minute in smoke
+		if (smokeCounter > 5) {// You have spent a minute in smoke
 			reason.text = "You inhaled too much smoke";
 			levelEndFail.Fail ();
 		}

@@ -39,7 +39,7 @@ public class FireStart : MonoBehaviour {
 		Instantiate (fire, spawnFirePoints[spawnPointIndex].position, spawnFirePoints[spawnPointIndex].rotation);
 		Instantiate (smoke, spawnFirePoints[spawnPointIndex].position, smoke.transform.rotation);
 
-		InvokeRepeating ("SpreadFire", 10f, 1f);
+		InvokeRepeating ("SpreadFire", 0f, 0.5f);
 
 	}
 
