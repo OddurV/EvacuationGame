@@ -31,6 +31,7 @@ public class ElevatorController : MonoBehaviour {
 	public AudioSource elevatorButtonSoundSource;
 	public AudioSource elevatorDoorSoundSource;
 	private bool isNotMoving = true;
+	public bool level3 = false;
 
 
 	// Use this for initialization
@@ -125,11 +126,11 @@ public class ElevatorController : MonoBehaviour {
 				Debug.Log ("Key 3 pressed");
 				Summon (3);
 			}
-			if(Input.GetKeyUp(KeyCode.Keypad4) || Input.GetKeyUp(KeyCode.Alpha4)){
+			if((Input.GetKeyUp(KeyCode.Keypad4) || Input.GetKeyUp(KeyCode.Alpha4)) && !level3){
 				Debug.Log ("Key 4 pressed");
 				Summon (4);
 			}
-			if(Input.GetKeyUp(KeyCode.Keypad5) || Input.GetKeyUp(KeyCode.Alpha5)){
+			if((Input.GetKeyUp(KeyCode.Keypad5) || Input.GetKeyUp(KeyCode.Alpha5)) && !level3){
 				Debug.Log ("Key 5 pressed");
 				Summon (5);
 			}

@@ -301,7 +301,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d78ecc3dab481f04094e2efab5814e44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 0
 --- !u!65 &15897198
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1741,8 +1740,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1300744101}
-  <agent>k__BackingField: {fileID: 0}
-  <character>k__BackingField: {fileID: 0}
 --- !u!114 &288022073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1763,7 +1760,6 @@ MonoBehaviour:
   - {fileID: 240613045}
   - {fileID: 715156693}
   rb: {fileID: 395321451}
-  i: 0
 --- !u!1 &304577303
 GameObject:
   m_ObjectHideFlags: 0
@@ -5448,8 +5444,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 402385077}
-  <agent>k__BackingField: {fileID: 0}
-  <character>k__BackingField: {fileID: 0}
 --- !u!114 &665506743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8472,7 +8466,6 @@ MonoBehaviour:
   currentState: 
   smooth: 0.7
   resetTime: 7
-  targetFloor: 1
   playerIsInElevator: 0
   door1: {fileID: 612441898}
   door2: {fileID: 1218403919}
@@ -8486,7 +8479,7 @@ MonoBehaviour:
   elevatorSoundSource: {fileID: 1288118194}
   elevatorButtonSoundSource: {fileID: 1288118193}
   elevatorDoorSoundSource: {fileID: 1288118192}
-  isNotMoving: 1
+  level3: 1
 --- !u!65 &1288118191
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9623,11 +9616,7 @@ MonoBehaviour:
   questCounter: 0
   fireManager: {fileID: 1724205984}
   mainCamera: {fileID: 1769927115}
-  target: {fileID: 0}
-  targetPos: {x: 0, y: 0, z: 0}
-  screenMiddle: {x: 0, y: 0, z: 0}
   questSource: {fileID: 1382937133}
-  finished: 0
   arrow: {fileID: 2046906936}
   questMarker: {fileID: 52178955}
 --- !u!4 &1382937127
@@ -9657,7 +9646,6 @@ MonoBehaviour:
   timerText: {fileID: 1317869298}
   finnished: 0
   finalTime: 
-  startTime: 0
 --- !u!114 &1382937129
 MonoBehaviour:
   m_ObjectHideFlags: 0
