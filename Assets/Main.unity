@@ -10575,7 +10575,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11437670, guid: 252085b093bae7d48b5df3bd5032da53, type: 2}
       propertyPath: m_Text
-      value: Congratulations! You Won!
+      value: 'Level Complete!
+
+'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 252085b093bae7d48b5df3bd5032da53, type: 2}
