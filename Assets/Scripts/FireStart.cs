@@ -14,9 +14,9 @@ public class FireStart : MonoBehaviour {
 
 	public float smokeDelay = 0f;
 	public float smokeRepeatDelay = 0.5f;
-
-
 	public static int spreadDistance = 0;
+
+	public Timer timerScript;
 
 	// Use this for initialization
 	void Start () {
@@ -42,6 +42,7 @@ public class FireStart : MonoBehaviour {
 
 		InvokeRepeating ("SpreadFire", smokeDelay, smokeRepeatDelay);
 
+		timerScript.Reset();
 	}
 
 

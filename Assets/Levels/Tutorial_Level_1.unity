@@ -11454,7 +11454,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 1317869298}
-  finnished: 0
   finalTime: 
 --- !u!114 &1382937129
 MonoBehaviour:
@@ -13388,6 +13387,7 @@ MonoBehaviour:
   gameManager: {fileID: 1382937125}
   smokeDelay: 0
   smokeRepeatDelay: 0.5
+  timerScript: {fileID: 1382937128}
 --- !u!224 &1734643325 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 22447500, guid: a9a2300205fea2e4a94cee585a9593fb,

@@ -7148,6 +7148,7 @@ MonoBehaviour:
   elevatorSoundSource: {fileID: 0}
   elevatorButtonSoundSource: {fileID: 0}
   elevatorDoorSoundSource: {fileID: 0}
+  level3: 0
 --- !u!65 &1288118191
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8116,7 +8117,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 1317869298}
-  finnished: 0
   finalTime: 
 --- !u!114 &1382937129
 MonoBehaviour:
@@ -9589,6 +9589,7 @@ MonoBehaviour:
   gameManager: {fileID: 1382937125}
   smokeDelay: 1
   smokeRepeatDelay: 3
+  timerScript: {fileID: 1382937128}
 --- !u!1 &1728942241
 GameObject:
   m_ObjectHideFlags: 0
