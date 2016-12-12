@@ -20,11 +20,11 @@ public class QuestSystem : MonoBehaviour {
 
 	//Quest Icons
 	public GameObject arrow;
-	//public GameObject exitSign;
 	public GameObject questMarker;
-	/*public GameObject alert;
+	public GameObject exitSign;
 	public GameObject coffee;
 	public GameObject letter;
+	/*public GameObject alert;
 	public GameObject speechCoffee;
 	public GameObject speechRun;
 	public GameObject speechLetter;
