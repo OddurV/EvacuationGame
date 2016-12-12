@@ -5,6 +5,7 @@ using System.Collections;
 public class Quest : MonoBehaviour {
 
 	public QuestSystem questSystem;
+	public string type;
     
 	void OnTriggerEnter (Collider other) {
         if (other.tag == "Player")

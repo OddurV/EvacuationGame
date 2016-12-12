@@ -51,6 +51,9 @@ public class QuestSystem : MonoBehaviour {
 			finished = true;
 			arrow.SetActive (false);
 			questMarker.SetActive (false);
+			exitSign.SetActive (false);
+			coffee.SetActive (false);
+			letter.SetActive (false);
 			return;
 		}
 
@@ -66,7 +69,44 @@ public class QuestSystem : MonoBehaviour {
 		    targetPos.x > 0 && targetPos.x < Screen.width &&
 		    targetPos.y > 0 && targetPos.y < Screen.height) {
 
-			questMarker.transform.localPosition = targetPos-screenCenter;
+			switch(quests[questCounter].GetComponent<Quest>().type){
+			case "questMarker":
+				questMarker.transform.localPosition = targetPos - screenCenter;
+				questMarker.SetActive (true);
+				exitSign.SetActive (false);
+				coffee.SetActive (false);
+				letter.SetActive (false);
+				break;
+			case "coffee":
+				coffee.transform.localPosition = targetPos - screenCenter;
+				questMarker.SetActive (false);
+				exitSign.SetActive (false);
+				coffee.SetActive (true);
+				letter.SetActive (false);
+				break;
+			case "letter":
+				letter.transform.localPosition = targetPos - screenCenter;
+				questMarker.SetActive (false);
+				exitSign.SetActive (false);
+				coffee.SetActive (false);
+				letter.SetActive (true);
+				break;
+			case "exitSign":
+				exitSign.transform.localPosition = targetPos - screenCenter;
+				questMarker.SetActive (false);
+				exitSign.SetActive (true);
+				coffee.SetActive (false);
+				letter.SetActive (false);
+				break;
+			default:
+				questMarker.transform.localPosition = targetPos - screenCenter;
+				questMarker.SetActive (true);
+				exitSign.SetActive (false);
+				coffee.SetActive (false);
+				letter.SetActive (false);
+				break;
+			}
+
 			//Debug.Log (quests[questCounter]+" is on-screen");
 			// Deactivate te arrow
 			arrow.SetActive(false);
@@ -111,8 +151,45 @@ public class QuestSystem : MonoBehaviour {
 			// set the arrow's position and rotation
 			arrow.transform.localPosition = targetPos;
 			arrow.transform.localRotation = Quaternion.Euler (0, 0, (angle-90) * Mathf.Rad2Deg);
+
 			// set the quest marker's position
-			questMarker.transform.localPosition = targetPos;
+			switch(quests[questCounter].GetComponent<Quest>().type){
+			case "questMarker":
+				questMarker.transform.localPosition = targetPos;
+				questMarker.SetActive (true);
+				exitSign.SetActive (false);
+				coffee.SetActive (false);
+				letter.SetActive (false);
+				break;
+			case "coffee":
+				coffee.transform.localPosition = targetPos;
+				questMarker.SetActive (false);
+				exitSign.SetActive (false);
+				coffee.SetActive (true);
+				letter.SetActive (false);
+				break;
+			case "letter":
+				letter.transform.localPosition = targetPos;
+				questMarker.SetActive (false);
+				exitSign.SetActive (false);
+				coffee.SetActive (false);
+				letter.SetActive (true);
+				break;
+			case "exitSign":
+				exitSign.transform.localPosition = targetPos;
+				questMarker.SetActive (false);
+				exitSign.SetActive (true);
+				coffee.SetActive (false);
+				letter.SetActive (false);
+				break;
+			default:
+				questMarker.transform.localPosition = targetPos;
+				questMarker.SetActive (true);
+				exitSign.SetActive (false);
+				coffee.SetActive (false);
+				letter.SetActive (false);
+				break;
+			}
 		}
 	}
 
