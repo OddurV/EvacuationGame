@@ -13,6 +13,8 @@ public class LevelEndFail : MonoBehaviour {
 	{
 		if (endFail.gameObject.activeInHierarchy == false)
 		{
+			// This is to stop the alarm noise and get the music playing again
+			gameManager.GetComponent<GameManager> ().isTheAlarmOn = false;
 			endFail.gameObject.SetActive(true);
 			Time.timeScale = 0;
 		}

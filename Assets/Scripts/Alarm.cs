@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class Alarm : MonoBehaviour {
@@ -7,6 +8,8 @@ public class Alarm : MonoBehaviour {
 
 	public bool triggered = false;
 	public GameObject gameManager;
+	public LevelEndFail levelEndFail;
+	public Text reason;
 
 	private int i;
 
@@ -14,7 +17,10 @@ public class Alarm : MonoBehaviour {
 		if (other.tag == "Player" && Input.GetKeyDown(KeyCode.Space)) {
 			triggered = true;
 			gameManager.GetComponent<GameManager> ().isTheAlarmOn = true;
-
+			if(!gameManager.GetComponent<GameManager> ().isThereAFire){
+				reason.text = "False alarm!";
+				levelEndFail.Fail ();
+			}
 			// Disable all the alarm triggers
 			alarmBoxes = GameObject.FindGameObjectsWithTag ("Alarm");
 			for (i = 0; i < alarmBoxes.Length; i++) {
