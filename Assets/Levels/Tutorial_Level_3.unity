@@ -15462,7 +15462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82811a3d5aa99004a95c88760494bf1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 600
+  timeRemaining: 1e+14
   fire: {fileID: 100000, guid: e1e6a88ec533ebd4bb02cc28a77b8ab4, type: 2}
   smoke: {fileID: 176312, guid: d6b9105c4533f4db990f628a3b6e2e96, type: 2}
   isReachingRightWall: 0

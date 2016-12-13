@@ -28,6 +28,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		Vector3 m_CapsuleCenter;
 		CapsuleCollider m_Capsule;
 		bool m_Crouching;
+		//public bool isPlayer = false;
 
 
 		void Start()
@@ -42,6 +43,18 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			m_OrigGroundCheckDistance = m_GroundCheckDistance;
 		}
 
+		/*void OnTriggerStay(Collider other){
+			if (other.tag == "Smoke" && !isPlayer) {
+				//Debug.Log ("An NPC should be crouching now!");
+				m_Crouching = true;
+			}
+		}
+
+		void OnTriggerExit(Collider other){
+			if (other.tag == "Smoke" && !isPlayer) {
+				m_Crouching = false;
+			}
+		}*/
 
 		public void Move(Vector3 move, bool crouch, bool jump)
 		{
