@@ -9,6 +9,8 @@ public class Door : MonoBehaviour {
 	private float currentValue = 0f;
 	private float easing = 0.05f;
 
+	public AudioSource audio;
+
 	// Update is called once per frame
 	void Update () {
 		currentValue = currentValue + (targetValue - currentValue) * easing;
@@ -28,6 +30,7 @@ public class Door : MonoBehaviour {
 		if (other.tag == "Player" && Input.GetKeyDown (KeyCode.Space)) {
 			//currentValue = AngleY;
 			targetValue = 0;
+			audio.Play (); 
 		}
 	}
 }

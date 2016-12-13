@@ -13,6 +13,9 @@ public class PlayerHealth : MonoBehaviour {
 	public float smokeCounter = 0;
 	public float healthTimer = 5;
     
+	public Transform smokeFail;
+	public Transform fireFail;
+
     // Use this for initialization
     void Start () {
         currentHealth = startingHealth;
@@ -31,14 +34,16 @@ public class PlayerHealth : MonoBehaviour {
 			smokeCounter += Time.deltaTime;
 		}
 		if (smokeCounter > healthTimer) {// You have spent too long in smoke
-			reason.text = "You inhaled too much smoke";
+			//reason.text = "You inhaled too much smoke";
+			smokeFail.gameObject.SetActive(true);
 			levelEndFail.Fail ();
 		}
 	}
 
 	void OnTriggerEnter(Collider other){
 		if (other.tag == "Fire") {
-			reason.text = "Stay away from the fire!";
+			//reason.text = "Stay away from the fire!";
+			fireFail.gameObject.SetActive(true);
 			levelEndFail.Fail ();
 		}
 	}

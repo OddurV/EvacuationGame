@@ -10,7 +10,7 @@ public class Alarm : MonoBehaviour {
 	public GameObject gameManager;
 	public LevelEndFail levelEndFail;
 	public Text reason;
-
+	public Transform alarmFail;
 	private int i;
 
 	void OnTriggerStay(Collider other){
@@ -18,7 +18,10 @@ public class Alarm : MonoBehaviour {
 			triggered = true;
 			gameManager.GetComponent<GameManager> ().isTheAlarmOn = true;
 			if(!gameManager.GetComponent<GameManager> ().isThereAFire){
-				reason.text = "False alarm!";
+				
+				//reason.text = "False alarm!";
+				alarmFail.gameObject.SetActive(true);
+
 				levelEndFail.Fail ();
 			}
 			// Disable all the alarm triggers
