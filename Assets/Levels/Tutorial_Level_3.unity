@@ -12217,6 +12217,7 @@ MonoBehaviour:
   quests: []
   questCounter: 0
   fireManager: {fileID: 1724205984}
+  gameManager: {fileID: 1382937131}
   mainCamera: {fileID: 1769927115}
   questSource: {fileID: 1382937133}
   arrow: {fileID: 2046906936}

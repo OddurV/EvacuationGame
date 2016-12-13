@@ -10,6 +10,7 @@ public class QuestSystem : MonoBehaviour {
 	public GameObject[] quests;
 	public int questCounter = 0;
 	public GameObject fireManager;
+	public GameManager gameManager;
 	public Camera mainCamera;
 	private Transform target; // Target to point at
 	private Vector3 targetPos;
@@ -32,10 +33,7 @@ public class QuestSystem : MonoBehaviour {
 	void Start(){
 		quests = GameObject.FindGameObjectsWithTag ("Quest").OrderBy( go => go.name ).ToArray();
 		// Deactivate all quests
-		for (int i = 0; i < quests.Length; i++) {
-			//Debug.Log ("Quest Number " + i + " is named" + quests [i].name);
-			quests [i].SetActive (false);
-		}
+		DeactivateQuests ();
 		// Activate the first quest
 		quests [0].SetActive (true);
 		messageText.text = "Go to "+quests[0];
@@ -47,8 +45,13 @@ public class QuestSystem : MonoBehaviour {
 		if (finished) {
 			return;
 		}
-		if(questCounter >= quests.Length){
+		/*if(gameManager.isThereAFire){
+			DeactivateQuests ();
 			finished = true;
+		}*/
+		if(questCounter >= quests.Length || gameManager.isThereAFire){
+			finished = true;
+			DeactivateQuests ();
 			arrow.SetActive (false);
 			questMarker.SetActive (false);
 			exitSign.SetActive (false);
@@ -209,5 +212,13 @@ public class QuestSystem : MonoBehaviour {
 		quests [questCounter].SetActive (true);
 		messageText.text = "Go to "+quests[questCounter];
 		questSource.Play ();
+	}
+
+	void DeactivateQuests(){
+		// Deactivate all quests
+		for (int i = 0; i < quests.Length; i++) {
+			//Debug.Log ("Quest Number " + i + " is named" + quests [i].name);
+			quests [i].SetActive (false);
+		}
 	}
 }
