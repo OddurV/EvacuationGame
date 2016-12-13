@@ -6,13 +6,7 @@ public class Footsteps : MonoBehaviour {
 	public AudioSource footstepSource;
 	public AudioClip[] footsteps;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+	void PlayFootstep(){if(footsteps.Length > 0 && !footstepSource.isPlaying)footstepSource.PlayOneShot(footsteps[Random.Range(0,footsteps.Length)]);}
+
+
 }
