@@ -15,7 +15,7 @@ public class QuestSystem : MonoBehaviour {
 	private Transform target; // Target to point at
 	private Vector3 targetPos;
 	private Vector3 screenMiddle;
-	public AudioSource questSource; 
+	//public AudioSource questSource; 
 	//public AudioClip questPickup;
 	private bool finished = false;
 
@@ -211,7 +211,7 @@ public class QuestSystem : MonoBehaviour {
 		}
 		quests [questCounter].SetActive (true);
 		messageText.text = "Go to "+quests[questCounter];
-		questSource.Play ();
+		//questSource.Play ();
 	}
 
 	void DeactivateQuests(){
