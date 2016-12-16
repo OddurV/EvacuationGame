@@ -16,6 +16,7 @@ public class LevelEnd : MonoBehaviour {
     public GameObject oneStar;
     public GameObject twoStars;
     public GameObject threeStars;
+	public Transform alarmFail;
     
     GameObject gos;
 
@@ -34,8 +35,9 @@ public class LevelEnd : MonoBehaviour {
 			// This is to stop the alarm noise and get the music playing again
 			gameManager.GetComponent<GameManager> ().isTheAlarmOn = false;
 		}else if (other.tag == "Player" && gameManager.isThereAFire && !gameManager.isTheAlarmOn){
-			reason.text = "Hey, what happened to the alarm?";
+			//reason.text = "Hey, what happened to the alarm?";
 			levelEndFail.Fail ();
+			alarmFail.gameObject.SetActive(true);
 			// This is to stop the alarm noise and get the music playing again
 			gameManager.GetComponent<GameManager> ().isTheAlarmOn = false;
 		}
