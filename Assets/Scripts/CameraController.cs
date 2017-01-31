@@ -80,7 +80,7 @@ public class CameraController : MonoBehaviour {
 	// Pre: player and cam are Vector3 objects
 	// Post: cam has been restricted so that it lies within specified bounds
 	// This function makes sure that the camera is always looking at the building
-	static private Vector3 Restrict (Vector3 player, Vector3 cam){
+	/*static*/ private Vector3 Restrict (Vector3 player, Vector3 cam){
 		//Running the game and moving the player gets 
 		//the following desired values of the camera's position
 		if (zoomOut) {
@@ -92,14 +92,21 @@ public class CameraController : MonoBehaviour {
 				cam.y = cam.x - 3f;
 			}
 		} else {//zoom is not allowed
-				if (cam.x > 5.3f) {
-					cam.x = 5.3f;
-					//Debug.Log ("Camera x="+cam.x+" Restricting camera to x=5.3");
-				}
-				if (cam.x < 1.0f) {
-					cam.x = 1.0f;
-					//Debug.Log ("Camera x="+cam.x+" Restricting camera to x=1.0");
-				}
+			if (cam.x > 5.3f) {
+				cam.x = 5.3f;
+				//Debug.Log ("Camera x="+cam.x+" Restricting camera to x=5.3");
+			}
+			if (cam.x < 1.0f) {
+				cam.x = 1.0f;
+				//Debug.Log ("Camera x="+cam.x+" Restricting camera to x=1.0");
+			}
+			if(player.x < -2){
+				float ratio = (-player.x - 2) / 9.5f;
+				this.transform.rotation = Quaternion.Euler((1-ratio)*18,270,0);
+				cam.y = cam.y - ratio * 0.8f;
+				/*this.transform.position = changeY;
+				Debug.Log ("changeY: " + changeY);*/
+			}
 		}
 		return cam;
 	}
