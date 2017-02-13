@@ -121,7 +121,7 @@ public class QuestSystem : MonoBehaviour {
 			// Making the origin be the center of the screen instead of the bottom left corner
 			targetPos -= screenCenter;
 
-			// find angle from center of screen to tartget position
+			// find angle from center of screen to target position
 			float angle = Mathf.Atan2(targetPos.y, targetPos.x);
 			angle -= 90 * Mathf.Deg2Rad;
 
