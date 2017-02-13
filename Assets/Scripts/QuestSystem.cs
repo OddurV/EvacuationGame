@@ -14,7 +14,7 @@ public class QuestSystem : MonoBehaviour {
 	public Camera mainCamera;
 	private Transform target; // Target to point at
 	private Vector3 targetPos;
-	private Vector3 screenMiddle;
+	//private Vector3 screenMiddle;
 	//public AudioSource questSource; 
 	//public AudioClip questPickup;
 	private bool finished = false;
@@ -111,7 +111,7 @@ public class QuestSystem : MonoBehaviour {
 			}
 
 			//Debug.Log (quests[questCounter]+" is on-screen");
-			// Deactivate te arrow
+			// Deactivate the arrow
 			arrow.SetActive(false);
 		} else {// target is off-screen
 			//Debug.Log (quests[questCounter]+" is off-screen");
@@ -121,7 +121,7 @@ public class QuestSystem : MonoBehaviour {
 			// Making the origin be the center of the screen instead of the bottom left corner
 			targetPos -= screenCenter;
 
-			// find angle from center of screen to mouse position
+			// find angle from center of screen to tartget position
 			float angle = Mathf.Atan2(targetPos.y, targetPos.x);
 			angle -= 90 * Mathf.Deg2Rad;
 
@@ -154,6 +154,63 @@ public class QuestSystem : MonoBehaviour {
 			// set the arrow's position and rotation
 			arrow.transform.localPosition = targetPos;
 			arrow.transform.localRotation = Quaternion.Euler (0, 0, (angle-90) * Mathf.Rad2Deg);
+
+			//======simplified version
+/*			angle = Mathf.Atan2(targetPos.y, targetPos.x);
+
+			cos = Mathf.Cos (angle);
+			sin = -Mathf.Sin (angle);
+
+			bool updown = false;
+			if (Mathf.Abs(sin) > 0.18f) {updown = true;}
+			Debug.Log ("sin: " + sin);
+			targetPos = new Vector3 (0,0,0);
+			if (updown) {
+				if (sin > 0) {
+					targetPos.y = -screenBounds.y;
+				} else {
+					targetPos.y = screenBounds.y;
+				}
+
+			} else {
+				if (cos >= 0) {
+					targetPos.x = screenBounds.x;
+				} else {
+					targetPos.x = -screenBounds.x;
+				}
+			}
+
+			// set the arrow's position and rotation
+			arrow.transform.localPosition = targetPos;
+*/
+			//New arrow method
+			angle = Mathf.Atan2 (targetPos.y, targetPos.x) * Mathf.Rad2Deg;
+			if (Mathf.Abs(angle) > 360) {
+				angle = angle % 360;
+			}
+			if (angle > -180) {//right
+				arrow.transform.localRotation = Quaternion.Euler (0, 0, 0);
+			}
+			if (angle > -160) {//up
+				arrow.transform.localRotation = Quaternion.Euler (0, 0, 90);
+			}
+			if (angle > -20) {//left
+				arrow.transform.localRotation = Quaternion.Euler (0, 0, 180);
+			}
+			if (angle > 20) {//down
+				arrow.transform.localRotation = Quaternion.Euler (0, 0, -90);
+			}
+			if (angle > 160) {//right
+				arrow.transform.localRotation = Quaternion.Euler (0, 0, 0);
+			}
+			
+			/*
+			Debug.Log ("angle: " + angle);
+			Debug.Log ("(angle-90) * Mathf.Rad2Deg: " + (angle-90) * Mathf.Rad2Deg);
+			Debug.Log ("sin((angle-90) * Mathf.Rad2Deg): " + Mathf.Sin((angle-90) * Mathf.Rad2Deg));
+			Debug.Log ("new angle: " + Mathf.Atan2 (targetPos.y, targetPos.x)*Mathf.Rad2Deg);
+*/
+			//======end simplified version
 
 			// set the quest marker's position
 			switch(quests[questCounter].GetComponent<Quest>().type){
