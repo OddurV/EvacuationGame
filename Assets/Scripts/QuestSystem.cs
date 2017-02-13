@@ -111,7 +111,7 @@ public class QuestSystem : MonoBehaviour {
 			}
 
 			//Debug.Log (quests[questCounter]+" is on-screen");
-			// Deactivate te arrow
+			// Deactivate the arrow
 			arrow.SetActive(false);
 		} else {// target is off-screen
 			//Debug.Log (quests[questCounter]+" is off-screen");
@@ -121,7 +121,7 @@ public class QuestSystem : MonoBehaviour {
 			// Making the origin be the center of the screen instead of the bottom left corner
 			targetPos -= screenCenter;
 
-			// find angle from center of screen to mouse position
+			// find angle from center of screen to tartget position
 			float angle = Mathf.Atan2(targetPos.y, targetPos.x);
 			angle -= 90 * Mathf.Deg2Rad;
 
@@ -148,6 +148,12 @@ public class QuestSystem : MonoBehaviour {
 			} else if (targetPos.x < -screenBounds.x) {//out of bounds left
 				targetPos = new Vector3 (-screenBounds.x, -screenBounds.x * m, 0);
 			}//else in bounds
+
+			//======simplified version
+			bool up = false;
+			if (Mathf.Abs(sin) > 0.5f) {up = true;}
+
+			//======end simplified version
 
 			// Activate the arrow
 			arrow.SetActive(true);
