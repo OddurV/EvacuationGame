@@ -157,6 +157,9 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			if (m_IsGrounded && move.magnitude > 0)
 			{
 				m_Animator.speed = m_AnimSpeedMultiplier;
+				if (m_Crouching) {
+					m_Animator.speed = 1.5f * m_AnimSpeedMultiplier;
+				}
 			}
 			else
 			{
