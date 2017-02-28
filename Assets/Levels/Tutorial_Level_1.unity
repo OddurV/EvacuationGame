@@ -8610,7 +8610,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11458558, guid: a9a2300205fea2e4a94cee585a9593fb, type: 2}
       propertyPath: m_Text
-      value: Oh no! You failed.
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 11470100, guid: a9a2300205fea2e4a94cee585a9593fb, type: 2}
       propertyPath: m_Sprite
@@ -11151,7 +11151,7 @@ MonoBehaviour:
   oneStar: {fileID: 1452838933}
   twoStars: {fileID: 1070636072}
   threeStars: {fileID: 872445324}
-  alarmFail: {fileID: 0}
+  alarmFail: {fileID: 1319086483}
 --- !u!1 &1135384453
 GameObject:
   m_ObjectHideFlags: 0

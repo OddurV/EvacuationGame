@@ -8088,7 +8088,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11458558, guid: a9a2300205fea2e4a94cee585a9593fb, type: 2}
       propertyPath: m_Text
-      value: Oh no! You failed.
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 11470100, guid: a9a2300205fea2e4a94cee585a9593fb, type: 2}
       propertyPath: m_Sprite

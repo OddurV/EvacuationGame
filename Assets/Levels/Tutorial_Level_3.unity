@@ -7564,7 +7564,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11458558, guid: a9a2300205fea2e4a94cee585a9593fb, type: 2}
       propertyPath: m_Text
-      value: Oh no! You failed.
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 11470100, guid: a9a2300205fea2e4a94cee585a9593fb, type: 2}
       propertyPath: m_Sprite
@@ -13937,6 +13937,10 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: -0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 11428964, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: alarmFail
+      value: 
+      objectReference: {fileID: 2120183040}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
   m_IsPrefabParent: 0
