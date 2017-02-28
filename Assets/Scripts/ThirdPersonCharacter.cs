@@ -28,6 +28,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		Vector3 m_CapsuleCenter;
 		CapsuleCollider m_Capsule;
 		bool m_Crouching;
+		public float crouchSpeed = 1.5f;
 		//public bool isPlayer = false;
 
 
@@ -158,7 +159,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			{
 				m_Animator.speed = m_AnimSpeedMultiplier;
 				if (m_Crouching) {
-					m_Animator.speed = 1.5f * m_AnimSpeedMultiplier;
+					m_Animator.speed = crouchSpeed * m_AnimSpeedMultiplier;
 				}
 			}
 			else
