@@ -8790,7 +8790,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -13949,6 +13949,66 @@ Prefab:
       propertyPath: alarmFail
       value: 
       objectReference: {fileID: 2120183040}
+    - target: {fileID: 11474452, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: fireManager
+      value: 
+      objectReference: {fileID: 1724205984}
+    - target: {fileID: 11492600, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: fireManager
+      value: 
+      objectReference: {fileID: 1724205984}
+    - target: {fileID: 11478918, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: fireManager
+      value: 
+      objectReference: {fileID: 1724205984}
+    - target: {fileID: 11415426, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: fireManager
+      value: 
+      objectReference: {fileID: 1724205984}
+    - target: {fileID: 11446180, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: fireManager
+      value: 
+      objectReference: {fileID: 1724205984}
+    - target: {fileID: 11404184, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: fireManager
+      value: 
+      objectReference: {fileID: 1724205984}
+    - target: {fileID: 11468254, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: fireManager
+      value: 
+      objectReference: {fileID: 1724205984}
+    - target: {fileID: 11448228, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: fireManager
+      value: 
+      objectReference: {fileID: 1724205984}
+    - target: {fileID: 11425346, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: fireManager
+      value: 
+      objectReference: {fileID: 1724205984}
+    - target: {fileID: 11468470, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: fireManager
+      value: 
+      objectReference: {fileID: 1724205984}
+    - target: {fileID: 11442718, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: fireManager
+      value: 
+      objectReference: {fileID: 1724205984}
+    - target: {fileID: 11438082, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: fireManager
+      value: 
+      objectReference: {fileID: 1724205984}
+    - target: {fileID: 11462850, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: fireManager
+      value: 
+      objectReference: {fileID: 1724205984}
+    - target: {fileID: 11492842, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: fireManager
+      value: 
+      objectReference: {fileID: 1724205984}
+    - target: {fileID: 11467746, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: fireManager
+      value: 
+      objectReference: {fileID: 1724205984}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
   m_IsPrefabParent: 0
@@ -15274,7 +15334,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -16887,7 +16947,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -17543,7 +17603,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -17996,7 +18056,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:

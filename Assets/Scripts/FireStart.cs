@@ -14,7 +14,8 @@ public class FireStart : MonoBehaviour {
 
 	public float smokeDelay = 0f;
 	public float smokeRepeatDelay = 0.5f;
-	public static int spreadDistance = 0;
+	public static int spreadDistanceRight = 0;
+	public static int spreadDistanceLeft = 0;
 
 	public Timer timerScript;
 
@@ -32,7 +33,8 @@ public class FireStart : MonoBehaviour {
 		
 	//The fire starts in a random predefined spawn point
 	public void StartFire () {
-		spreadDistance = 0;
+		spreadDistanceRight = 0;
+		spreadDistanceLeft = 0;
 		gameManager.GetComponent<GameManager> ().isThereAFire = true;
 		int spawnPointIndex = Random.Range (0, spawnFirePoints.Length);
 		//int spawnPointIndex = 12;
@@ -52,15 +54,19 @@ public class FireStart : MonoBehaviour {
 		Vector3 newPositionRight;
 		Vector3 newPositionLeft;
 	
-
-		spreadDistance += 4;
+		if (!isReachingRightWall) {
+			spreadDistanceRight += 4;
+		}
+		if (!isReachingLeftWall) {
+			spreadDistanceLeft += 4;
+		}
 		//Looking for the fire spot
 		respawn = GameObject.FindGameObjectWithTag("Fire");
 
 		//Adding smoke in each side of the first fire spot
 
-		newPositionRight = respawn.transform.position + new Vector3 (0f, 0f, spreadDistance);
-		newPositionLeft = respawn.transform.position - new Vector3 (0f, 0f, spreadDistance);
+		newPositionRight = respawn.transform.position + new Vector3 (0f, 0f, spreadDistanceRight);
+		newPositionLeft = respawn.transform.position - new Vector3 (0f, 0f, spreadDistanceLeft);
 
 		//Delimits the smoke spreading for the right wall
 		if (!isReachingRightWall)

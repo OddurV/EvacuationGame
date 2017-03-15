@@ -869,6 +869,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AngleY: 90
   audio: {fileID: 159895864}
+  fireManager: {fileID: 1724205984}
 --- !u!136 &159895863
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -946,7 +947,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -2045,6 +2046,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AngleY: 90
   audio: {fileID: 336368081}
+  fireManager: {fileID: 1724205984}
 --- !u!136 &336368080
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2122,7 +2124,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -3211,6 +3213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AngleY: 90
   audio: {fileID: 453300749}
+  fireManager: {fileID: 1724205984}
 --- !u!136 &453300748
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3288,7 +3291,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -9138,6 +9141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AngleY: 90
   audio: {fileID: 829800375}
+  fireManager: {fileID: 1724205984}
 --- !u!136 &829800374
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -12843,6 +12847,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AngleY: 90
   audio: {fileID: 1350839660}
+  fireManager: {fileID: 1724205984}
 --- !u!136 &1350839659
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -12920,7 +12925,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:

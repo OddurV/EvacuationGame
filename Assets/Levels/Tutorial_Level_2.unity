@@ -454,6 +454,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AngleY: 90
   audio: {fileID: 27337376}
+  fireManager: {fileID: 1724205984}
 --- !u!136 &27337375
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -531,7 +532,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -5184,6 +5185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AngleY: 90
   audio: {fileID: 610737037}
+  fireManager: {fileID: 1724205984}
 --- !u!136 &610737036
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5261,7 +5263,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -5399,6 +5401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AngleY: 90
   audio: {fileID: 623581035}
+  fireManager: {fileID: 1724205984}
 --- !u!136 &623581034
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6114,6 +6117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AngleY: 90
   audio: {fileID: 744122720}
+  fireManager: {fileID: 1724205984}
 --- !u!136 &744122719
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6191,7 +6195,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -7141,6 +7145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AngleY: 90
   audio: {fileID: 960185200}
+  fireManager: {fileID: 1724205984}
 --- !u!136 &960185199
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7218,7 +7223,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -8244,6 +8249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AngleY: 90
   audio: {fileID: 1188351394}
+  fireManager: {fileID: 1724205984}
 --- !u!136 &1188351393
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8321,7 +8327,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -8777,6 +8783,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AngleY: 90
   audio: {fileID: 1296896509}
+  fireManager: {fileID: 1724205984}
 --- !u!136 &1296896508
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8854,7 +8861,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -8924,6 +8931,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AngleY: 90
   audio: {fileID: 1307086330}
+  fireManager: {fileID: 1724205984}
 --- !u!136 &1307086329
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -9001,7 +9009,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -9516,6 +9524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AngleY: 90
   audio: {fileID: 1357252243}
+  fireManager: {fileID: 1724205984}
 --- !u!136 &1357252242
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -9593,7 +9602,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -11393,6 +11402,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AngleY: 90
   audio: {fileID: 1525008475}
+  fireManager: {fileID: 1724205984}
 --- !u!136 &1525008474
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -11470,7 +11480,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -11527,6 +11537,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AngleY: 90
   audio: {fileID: 1525886370}
+  fireManager: {fileID: 1724205984}
 --- !u!136 &1525886369
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -11604,7 +11615,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -12383,6 +12394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AngleY: 90
   audio: {fileID: 1749797521}
+  fireManager: {fileID: 1724205984}
 --- !u!136 &1749797520
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -12460,7 +12472,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -13463,6 +13475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AngleY: 90
   audio: {fileID: 1891750800}
+  fireManager: {fileID: 1724205984}
 --- !u!136 &1891750799
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -13540,7 +13553,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -13597,6 +13610,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AngleY: 90
   audio: {fileID: 1892729656}
+  fireManager: {fileID: 1724205984}
 --- !u!136 &1892729655
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -13674,7 +13688,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -14894,6 +14908,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AngleY: 90
   audio: {fileID: 2130893979}
+  fireManager: {fileID: 1724205984}
 --- !u!136 &2130893978
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -14971,7 +14986,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:

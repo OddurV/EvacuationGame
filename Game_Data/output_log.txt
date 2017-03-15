@@ -1,0 +1,128 @@
+Initialize engine version: 5.3.5f1 (960ebf59018a)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA Quadro K2000  (ID=0xffe)
+    Vendor:   NVIDIA
+    VRAM:     1990 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: \\hsnas6\StudentHome\2016\a16oddvi\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading \\hsnas6\StudentHome\2016\a16oddvi\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: \\hsnas6\StudentHome\2016\a16oddvi\Documents\GitHub\EvacuationGame\Game_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading \\hsnas6\StudentHome\2016\a16oddvi\Documents\GitHub\EvacuationGame\Game_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: \\hsnas6\StudentHome\2016\a16oddvi\Documents\GitHub\EvacuationGame\Game_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading \\hsnas6\StudentHome\2016\a16oddvi\Documents\GitHub\EvacuationGame\Game_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: \\hsnas6\StudentHome\2016\a16oddvi\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading \\hsnas6\StudentHome\2016\a16oddvi\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: \\hsnas6\StudentHome\2016\a16oddvi\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading \\hsnas6\StudentHome\2016\a16oddvi\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: \\hsnas6\StudentHome\2016\a16oddvi\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading \\hsnas6\StudentHome\2016\a16oddvi\Documents\GitHub\EvacuationGame\Game_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  2.084 seconds
+Platform assembly: \\hsnas6\StudentHome\2016\a16oddvi\Documents\GitHub\EvacuationGame\Game_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: \\hsnas6\StudentHome\2016\a16oddvi\Documents\GitHub\EvacuationGame\Game_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 2.970463 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: ba4 -> priority: 1 
+  Thread -> id: 16b0 -> priority: 1 
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 8.752004 ms
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 1844.
+Total: 1.234604 ms (FindLiveObjects: 0.141708 ms CreateObjectMapping: 0.111199 ms MarkObjects: 0.938356 ms  DeleteObjects: 0.042198 ms)
+
+Quest completed!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Quest completed!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Quest completed!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.756790 ms
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 1754.
+Total: 1.220062 ms (FindLiveObjects: 0.144845 ms CreateObjectMapping: 0.070426 ms MarkObjects: 0.903570 ms  DeleteObjects: 0.100650 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.174044 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 1755.
+Total: 1.109432 ms (FindLiveObjects: 0.127737 ms CreateObjectMapping: 0.069571 ms MarkObjects: 0.899293 ms  DeleteObjects: 0.012260 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.239338 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 1755.
+Total: 1.094036 ms (FindLiveObjects: 0.120324 ms CreateObjectMapping: 0.068430 ms MarkObjects: 0.892450 ms  DeleteObjects: 0.011975 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.150379 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 1755.
+Total: 1.103730 ms (FindLiveObjects: 0.122890 ms CreateObjectMapping: 0.071281 ms MarkObjects: 0.896157 ms  DeleteObjects: 0.012260 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Alarm.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.486087 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3857.
+Total: 1.757814 ms (FindLiveObjects: 0.305086 ms CreateObjectMapping: 0.161097 ms MarkObjects: 1.205806 ms  DeleteObjects: 0.084968 ms)
+
+Quest completed!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Key 3 pressed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Quest completed!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Key 2 pressed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Key 1 pressed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Key 2 pressed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Quest completed!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.967041 ms
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 5138.
+Total: 1.145644 ms (FindLiveObjects: 0.258611 ms CreateObjectMapping: 0.326756 ms MarkObjects: 0.541458 ms  DeleteObjects: 0.018248 ms)
+
+Quest completed!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.770532 ms
+
+Unloading 260 unused Assets to reduce memory usage. Loaded Objects now: 347.
+Total: 1.582745 ms (FindLiveObjects: 0.041058 ms CreateObjectMapping: 0.067005 ms MarkObjects: 0.479870 ms  DeleteObjects: 0.993385 ms)
+

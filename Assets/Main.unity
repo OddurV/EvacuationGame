@@ -14169,6 +14169,66 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: -0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 11474452, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: fireManager
+      value: 
+      objectReference: {fileID: 1724205984}
+    - target: {fileID: 11492600, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: fireManager
+      value: 
+      objectReference: {fileID: 1724205984}
+    - target: {fileID: 11478918, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: fireManager
+      value: 
+      objectReference: {fileID: 1724205984}
+    - target: {fileID: 11415426, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: fireManager
+      value: 
+      objectReference: {fileID: 1724205984}
+    - target: {fileID: 11446180, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: fireManager
+      value: 
+      objectReference: {fileID: 1724205984}
+    - target: {fileID: 11404184, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: fireManager
+      value: 
+      objectReference: {fileID: 1724205984}
+    - target: {fileID: 11468254, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: fireManager
+      value: 
+      objectReference: {fileID: 1724205984}
+    - target: {fileID: 11448228, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: fireManager
+      value: 
+      objectReference: {fileID: 1724205984}
+    - target: {fileID: 11425346, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: fireManager
+      value: 
+      objectReference: {fileID: 1724205984}
+    - target: {fileID: 11468470, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: fireManager
+      value: 
+      objectReference: {fileID: 1724205984}
+    - target: {fileID: 11442718, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: fireManager
+      value: 
+      objectReference: {fileID: 1724205984}
+    - target: {fileID: 11438082, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: fireManager
+      value: 
+      objectReference: {fileID: 1724205984}
+    - target: {fileID: 11462850, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: fireManager
+      value: 
+      objectReference: {fileID: 1724205984}
+    - target: {fileID: 11492842, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: fireManager
+      value: 
+      objectReference: {fileID: 1724205984}
+    - target: {fileID: 11467746, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
+      propertyPath: fireManager
+      value: 
+      objectReference: {fileID: 1724205984}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 00c26d786ff6a414481abee94c44f204, type: 2}
   m_IsPrefabParent: 0

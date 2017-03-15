@@ -8,8 +8,11 @@ public class Door : MonoBehaviour {
 	private float targetValue = 0f;
 	private float currentValue = 0f;
 	private float easing = 0.05f;
+	private bool smokeOnTheLeftBlocked = false;
+	private bool smokeOnTheRightBlocked = false;
 
 	public AudioSource audio;
+	public GameObject fireManager;
 
 	// Update is called once per frame
 	void Update () {
@@ -20,9 +23,26 @@ public class Door : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other)
 	{
-       
+		if (other.tag == "Smoke" && targetValue != AngleY) {
+			if (other.transform.position.z > this.transform.position.z) {
+				fireManager.GetComponent<FireStart>().isReachingLeftWall = true;
+				smokeOnTheRightBlocked = true;
+			} else {
+				fireManager.GetComponent<FireStart>().isReachingRightWall = true;
+				smokeOnTheLeftBlocked = true;
+			}
+		}else{
             targetValue = AngleY;
         //currentValue = 0;
+			if (smokeOnTheRightBlocked) {
+				fireManager.GetComponent<FireStart>().isReachingLeftWall = false;
+				smokeOnTheRightBlocked = false;
+			}
+			if(smokeOnTheLeftBlocked){
+				fireManager.GetComponent<FireStart>().isReachingRightWall = false;
+				smokeOnTheLeftBlocked = false;
+			}
+		}
     }
 
 	void OnTriggerStay(Collider other)
