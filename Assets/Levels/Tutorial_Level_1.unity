@@ -85,7 +85,7 @@ NavMeshSettings:
     minRegionArea: 2
     cellSize: 0.06666667
     manualCellSize: 0
-  m_NavMeshData: {fileID: 23800000, guid: 32ea48cefe5104741af77db1c082b6bd, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 725ebbe309811ec4391629b802bd542f, type: 2}
 --- !u!1 &6403264
 GameObject:
   m_ObjectHideFlags: 0
@@ -2374,11 +2374,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 8265210, guid: 31722b9862921d94d9d42d3ba97802eb, type: 2}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: 24300001, guid: a5e2d542073599047a37342e7b642deb,
-        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 31722b9862921d94d9d42d3ba97802eb, type: 2}
   m_IsPrefabParent: 0

@@ -38,7 +38,8 @@ AudioSource:
   m_GameObject: {fileID: 136212}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300001, guid: a5e2d542073599047a37342e7b642deb,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -116,7 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio: {fileID: 8265210}
-  coffee: {fileID: 8300000, guid: c62415442ce624a4e83b1a8623310bc7, type: 3}
+  coffee: {fileID: 8300000, guid: 21a31d1736efdc742b1bf96123265346, type: 3}
   npc:
   - {fileID: 8300000, guid: 75c19990e647902488e438a6f90a6637, type: 3}
   - {fileID: 8300000, guid: 347843b22ae33de4586803a7edef0732, type: 3}
