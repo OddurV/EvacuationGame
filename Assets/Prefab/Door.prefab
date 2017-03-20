@@ -10,7 +10,6 @@ GameObject:
   - 4: {fileID: 409172}
   - 136: {fileID: 13615554}
   - 114: {fileID: 11495714}
-  - 65: {fileID: 6519890}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -95,18 +94,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 145010}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &6519890
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 133566}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 5, y: 4, z: 4}
-  m_Center: {x: 0, y: 2, z: 0}
 --- !u!114 &11495714
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -119,8 +106,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AngleY: 90
-  audio: {fileID: 0}
-  fireManager: {fileID: 0}
 --- !u!136 &13615554
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -129,7 +114,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 133566}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   m_Radius: 2
   m_Height: 1
   m_Direction: 1
