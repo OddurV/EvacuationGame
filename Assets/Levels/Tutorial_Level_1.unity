@@ -834,6 +834,7 @@ GameObject:
   - 136: {fileID: 159895863}
   - 114: {fileID: 159895862}
   - 82: {fileID: 159895864}
+  - 65: {fileID: 159895865}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -879,7 +880,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 159895860}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 2
   m_Height: 1
   m_Direction: 1
@@ -959,6 +960,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!65 &159895865
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 159895860}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5, y: 4, z: 4}
+  m_Center: {x: 0, y: 2, z: 0}
 --- !u!1 &180507265
 GameObject:
   m_ObjectHideFlags: 0
@@ -2011,6 +2024,7 @@ GameObject:
   - 136: {fileID: 336368080}
   - 114: {fileID: 336368079}
   - 82: {fileID: 336368081}
+  - 65: {fileID: 336368082}
   m_Layer: 0
   m_Name: Door3
   m_TagString: Untagged
@@ -2056,7 +2070,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 336368077}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 2
   m_Height: 1
   m_Direction: 1
@@ -2136,6 +2150,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!65 &336368082
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 336368077}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5, y: 4, z: 4}
+  m_Center: {x: 0, y: 2, z: 0}
 --- !u!1 &342269460
 GameObject:
   m_ObjectHideFlags: 0
@@ -3173,6 +3199,7 @@ GameObject:
   - 136: {fileID: 453300748}
   - 114: {fileID: 453300747}
   - 82: {fileID: 453300749}
+  - 65: {fileID: 453300750}
   m_Layer: 0
   m_Name: Door4
   m_TagString: Untagged
@@ -3218,7 +3245,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 453300745}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 2
   m_Height: 1
   m_Direction: 1
@@ -3298,6 +3325,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!65 &453300750
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 453300745}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5, y: 4, z: 4}
+  m_Center: {x: 0, y: 2, z: 0}
 --- !u!1 &455329184
 GameObject:
   m_ObjectHideFlags: 0
@@ -9101,6 +9140,7 @@ GameObject:
   - 136: {fileID: 829800374}
   - 114: {fileID: 829800373}
   - 82: {fileID: 829800375}
+  - 65: {fileID: 829800376}
   m_Layer: 0
   m_Name: DoorExit
   m_TagString: Untagged
@@ -9146,7 +9186,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 829800371}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 2
   m_Height: 1
   m_Direction: 1
@@ -9226,6 +9266,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!65 &829800376
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 829800371}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5, y: 4, z: 4}
+  m_Center: {x: 0, y: 2, z: 0}
 --- !u!1001 &839200294
 Prefab:
   m_ObjectHideFlags: 0
@@ -12807,6 +12859,7 @@ GameObject:
   - 136: {fileID: 1350839659}
   - 114: {fileID: 1350839658}
   - 82: {fileID: 1350839660}
+  - 65: {fileID: 1350839661}
   m_Layer: 0
   m_Name: Door2
   m_TagString: Untagged
@@ -12852,7 +12905,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1350839656}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 2
   m_Height: 1
   m_Direction: 1
@@ -12932,6 +12985,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!65 &1350839661
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1350839656}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5, y: 4, z: 4}
+  m_Center: {x: 0, y: 2, z: 0}
 --- !u!1 &1358318316
 GameObject:
   m_ObjectHideFlags: 0
