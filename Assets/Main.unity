@@ -9955,6 +9955,10 @@ RectTransform:
   m_PrefabParentObject: {fileID: 22491130, guid: acd3304d1326742a198c343adac03ccd,
     type: 2}
   m_PrefabInternal: {fileID: 769042746}
+--- !u!1 &1051324735 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 173418, guid: 38e8e4ab01d90df42ad21847b6abd5a8, type: 2}
+  m_PrefabInternal: {fileID: 1725281610}
 --- !u!1 &1051959677
 GameObject:
   m_ObjectHideFlags: 0
@@ -11559,6 +11563,11 @@ MonoBehaviour:
   door3: {fileID: 1552489399}
   door4: {fileID: 1799396162}
   door5: {fileID: 1544525130}
+  sign1: {fileID: 1051324735}
+  sign2: {fileID: 1334301268}
+  sign3: {fileID: 1832415022}
+  sign4: {fileID: 1672468633}
+  sign5: {fileID: 1442088302}
   gameManager: {fileID: 1382937125}
   elevatorSound: {fileID: 8300000, guid: a0e699a7cb10b144f94088bb34b57dc6, type: 3}
   elevatorButtonSound: {fileID: 8300000, guid: f749de2ef491ba049926778562a7631a, type: 3}
@@ -12342,6 +12351,10 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1333823169}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1334301268 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 146888, guid: 38e8e4ab01d90df42ad21847b6abd5a8, type: 2}
+  m_PrefabInternal: {fileID: 1725281610}
 --- !u!1 &1341179737
 GameObject:
   m_ObjectHideFlags: 0
@@ -15329,6 +15342,10 @@ RectTransform:
   m_PrefabParentObject: {fileID: 22492230, guid: 252085b093bae7d48b5df3bd5032da53,
     type: 2}
   m_PrefabInternal: {fileID: 1436116966}
+--- !u!1 &1442088302 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 143512, guid: 38e8e4ab01d90df42ad21847b6abd5a8, type: 2}
+  m_PrefabInternal: {fileID: 1725281610}
 --- !u!1001 &1462238924
 Prefab:
   m_ObjectHideFlags: 0
@@ -16801,6 +16818,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3296a00a55f0e049acb11c4020578bb, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1672468633 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 159432, guid: 38e8e4ab01d90df42ad21847b6abd5a8, type: 2}
+  m_PrefabInternal: {fileID: 1725281610}
 --- !u!1001 &1676557392
 Prefab:
   m_ObjectHideFlags: 0
@@ -18699,6 +18720,10 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1822100222}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1832415022 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 196762, guid: 38e8e4ab01d90df42ad21847b6abd5a8, type: 2}
+  m_PrefabInternal: {fileID: 1725281610}
 --- !u!1 &1832455906
 GameObject:
   m_ObjectHideFlags: 0

@@ -22,6 +22,12 @@ public class ElevatorController : MonoBehaviour {
 	public GameObject door4;
 	public GameObject door5;
 
+	public GameObject sign1;
+	public GameObject sign2;
+	public GameObject sign3;
+	public GameObject sign4;
+	public GameObject sign5;
+
 	public GameObject gameManager;
 
 	public AudioClip elevatorSound;
@@ -53,13 +59,20 @@ public class ElevatorController : MonoBehaviour {
 		CloseAll ();
 
 		// Deactivate the elevator during a fire
-		if (gameManager.GetComponent<GameManager> ().isThereAFire && !playerIsInElevator) {return;}
+		if (gameManager.GetComponent<GameManager> ().isThereAFire && !playerIsInElevator) {
+			elevatorFireLights ();
+			return;
+		}
 
 		// Play the elevator movement sound
 		if (!isNotMoving) {
 			elevatorSoundSource.Play ();
+			elevatorLightsOn ();
+
 		}
 		isNotMoving = true;
+
+
 
 		// Open the door where the elevator is
 		if (Mathf.Abs (elevator.position.y - newPosition.y) <= 0.3) {
@@ -69,6 +82,7 @@ public class ElevatorController : MonoBehaviour {
 			isNotMoving = false;
 			// Play the door opening sound
 			//elevatorDoorSoundSource.Play();
+			elevatorLightsOff ();
 
 			switch (targetFloor) {
 			case 5:
@@ -199,5 +213,45 @@ public class ElevatorController : MonoBehaviour {
 			targetFloor = 1;
 			break;
 		}
+	}
+
+	public void elevatorLightsOn(){
+		/*Renderer renderer = sign1.GetComponent<Renderer> ();
+		Material mat = renderer.material;*/
+
+		float emission = 0.1f;//Mathf.PingPong (Time.time, 1.0f);
+		Color baseColor = Color.white;
+		Color finalColor = baseColor * Mathf.LinearToGammaSpace (emission);
+
+		sign1.GetComponent<Renderer> ().material.SetColor ("_EmissionColor", finalColor);
+		sign2.GetComponent<Renderer> ().material.SetColor ("_EmissionColor", finalColor);
+		sign3.GetComponent<Renderer> ().material.SetColor ("_EmissionColor", finalColor);
+		sign4.GetComponent<Renderer> ().material.SetColor ("_EmissionColor", finalColor);
+		sign5.GetComponent<Renderer> ().material.SetColor ("_EmissionColor", finalColor);
+	}
+
+	public void elevatorLightsOff(){
+
+		float emission = 0.001f;//Mathf.PingPong (Time.time, 1.0f);
+		Color baseColor = Color.white;
+		Color finalColor = baseColor * Mathf.LinearToGammaSpace (emission);
+
+		sign1.GetComponent<Renderer> ().material.SetColor ("_EmissionColor", finalColor);
+		sign2.GetComponent<Renderer> ().material.SetColor ("_EmissionColor", finalColor);
+		sign3.GetComponent<Renderer> ().material.SetColor ("_EmissionColor", finalColor);
+		sign4.GetComponent<Renderer> ().material.SetColor ("_EmissionColor", finalColor);
+		sign5.GetComponent<Renderer> ().material.SetColor ("_EmissionColor", finalColor);
+	}
+
+	public void elevatorFireLights(){
+		float emission = Mathf.PingPong (Time.time, 0.5f);
+		Color baseColor = Color.red;
+		Color finalColor = baseColor * Mathf.LinearToGammaSpace (emission);
+
+		sign1.GetComponent<Renderer> ().material.SetColor ("_EmissionColor", finalColor);
+		sign2.GetComponent<Renderer> ().material.SetColor ("_EmissionColor", finalColor);
+		sign3.GetComponent<Renderer> ().material.SetColor ("_EmissionColor", finalColor);
+		sign4.GetComponent<Renderer> ().material.SetColor ("_EmissionColor", finalColor);
+		sign5.GetComponent<Renderer> ().material.SetColor ("_EmissionColor", finalColor);
 	}
 }
