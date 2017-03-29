@@ -41,6 +41,12 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             this.target = target;
         }
 
+		void OnTriggerEnter(Collider other){
+			if (other.tag == "Smoke") {
+				m_Crouching = true;
+			}
+		}
+
 		void OnTriggerStay(Collider other){
 			if (other.tag == "Smoke") {
 				m_Crouching = true;

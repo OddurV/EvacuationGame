@@ -23,4 +23,11 @@ public class MoveAI : MonoBehaviour {
 			this.GetComponent<AICharacterControl>().enabled = true;
 		}
 	}
+
+	void OnTriggerEnter(Collider other){
+		if (other.tag == "Smoke") {
+			rb.isKinematic = false;
+			this.GetComponent<AICharacterControl>().enabled = true;
+		}
+	}
 }
