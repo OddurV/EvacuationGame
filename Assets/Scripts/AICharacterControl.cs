@@ -11,6 +11,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         public NavMeshAgent agent { get; private set; }             // the navmesh agent required for the path finding
         public ThirdPersonCharacter character { get; private set; } // the character we are controlling
         public Transform target;            						// target to aim for
+		public Transform backupTarget;
 		bool m_Crouching = false;
 
         private void Start()
@@ -40,6 +41,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         {
             this.target = target;
         }
+
+		public void SetBackupTarget(Transform target)
+		{
+			this.target = backupTarget;
+		}
 
 		void OnTriggerEnter(Collider other){
 			if (other.tag == "Smoke") {

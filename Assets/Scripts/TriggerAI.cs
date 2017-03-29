@@ -27,4 +27,14 @@ public class TriggerAI : MonoBehaviour {
             this.GetComponent<AICharacterControl>().enabled = true;
         }
     }
+
+	void OnTriggerEnter(Collider other){
+		if (other.tag == "Smoke") {
+			rb.isKinematic = false;
+			if(this.GetComponent<AICharacterControl>().enabled = false){
+				this.GetComponent<AICharacterControl>().SetBackupTarget(this.GetComponent<AICharacterControl>().target);
+			}
+			this.GetComponent<AICharacterControl>().enabled = true;
+		}
+	}
 }
