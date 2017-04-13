@@ -5,13 +5,29 @@ using UnityEngine.EventSystems;
 
 public class PauseController : MonoBehaviour {
     public Transform pause;
+	private bool paused = false;
 	// Update is called once per frame
 	void Update () {
         
-       if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Pause();
+			paused = !paused;
+			Pause();
         }
+		if (paused) {
+			if(Input.GetKeyDown(KeyCode.Alpha1)){
+				Application.LoadLevel("Tutorial_Level_1");
+			}
+			if(Input.GetKeyDown(KeyCode.Alpha2)){
+				Application.LoadLevel("Tutorial_Level_2");
+			}
+			if(Input.GetKeyDown(KeyCode.Alpha3)){
+				Application.LoadLevel("Tutorial_Level_3");
+			}
+			if(Input.GetKeyDown(KeyCode.Alpha4)){
+				Application.LoadLevel("Main");
+			}
+		}
 	}
 
     public void Pause()
