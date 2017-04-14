@@ -2212,6 +2212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1300744101}
+  backupTarget: {fileID: 0}
 --- !u!114 &288022073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6391,6 +6392,10 @@ Prefab:
       propertyPath: fireFail
       value: 
       objectReference: {fileID: 2023353572}
+    - target: {fileID: 11496888, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 2}
+      propertyPath: healthTimer
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 2}
   m_IsPrefabParent: 0
@@ -6838,6 +6843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 402385077}
+  backupTarget: {fileID: 0}
 --- !u!114 &665506743
 MonoBehaviour:
   m_ObjectHideFlags: 0
